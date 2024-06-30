@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --button-bg: #2866DE;
+  --button-bg-hover: #D9E6FF;
+  --nav-height: 5rem;
+  --nav-bottom-border: 90deg,
+    #0000000d 3%,
+    #0000002e 48%,
+    #0000000d 97%
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +20,10 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --nav-bottom-border: 90deg,
+      #ffffff0d 3%,
+      #f8f8f82e 48%,
+      #ffffff0d 97%;
   }
 }
 
@@ -43,4 +54,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+main {
+  padding-top: calc(var(--nav-height) + 1rem);
 }
