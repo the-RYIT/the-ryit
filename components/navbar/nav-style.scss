@@ -73,6 +73,7 @@ nav {
 
       a {
 
+
         text-decoration: none;
       }
     }
@@ -99,4 +100,39 @@ nav {
       background-color: var(--button-bg-hover);
     }
   }
+}
+
+
+
+
+
+
+@media screen and (min-width:990px) and (max-width: 1030px) {
+
+  nav ul {
+    gap: 2rem;
+
+    li a {
+      font-size: 1.3rem;
+    }
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 990px) {
+
+  nav ul {
+    gap: 1rem;
+
+    li a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cta_btns>button {
+    width: 8rem;
+    height: 2.5rem;
+    letter-spacing: normal
+  }
+
 }

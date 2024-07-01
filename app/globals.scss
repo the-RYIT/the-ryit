@@ -7,12 +7,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --button-bg: #2866DE;
-  --button-bg-hover: #D9E6FF;
+  --second-bg-color: #D9E6FF;
   --nav-height: 5rem;
   --nav-bottom-border: 90deg,
     #0000000d 3%,
     #0000002e 48%,
-    #0000000d 97%
+    #0000000d 97%;
+  --button-bg-hover: #ffffff
 }
 
 @media (prefers-color-scheme: dark) {

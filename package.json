@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "devHost": "next dev -H 192.168.0.169"
   },
   "dependencies": {
     "next": "14.2.4",

@@ -1,0 +1,57 @@
+.mobile-nav {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -6;
+    background: rgb(var(--background-end-rgb));
+    padding-top: calc(var(--nav-height) + 2rem);
+    transition: transform 400ms ease-in-out;
+
+
+    ul.mobile-nav-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        width: 100%;
+
+        >li a {
+            font-size: 1.4rem;
+        }
+
+        >span.horizontal-border {
+            height: 2px;
+            width: 90%;
+            background: #4b4b4b40;
+        }
+    }
+}
+
+.nav-open-close-btn {
+    background: var(--button-bg);
+    cursor: pointer;
+
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 8px 4px;
+
+
+    .burger span {
+        background: white;
+    }
+
+    &:hover {
+        background: var(--button-bg-hover);
+        border-color: var(--button-bg);
+
+        .burger span {
+            background: black;
+        }
+
+    }
+
+}
