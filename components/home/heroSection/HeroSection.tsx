@@ -8,12 +8,12 @@ const HeroSection = () => {
     <section className="heroSection flex justify-between relative">
       <aside className="pt-8 text-side grow">
         <div className="header absolute">
-          <h1 className={ntr.className}>Transform YourSelf</h1>
+          <h1 className={`${ntr.className} text-3xl`}>Transform YourSelf</h1>
           <h1 className="ml-4">Through Technology</h1>
         </div>
 
-        <div className="h-full flex flex-col items-start justify-center gap-6">
-          <div className=" w-[70%]">
+        <div className="h-full flex flex-col items-start lg:justify-center justify-start lg:p-0 sm:pt-40 pt-24 gap-6">
+          <div className=" sm:w-[70%] w-full pr-3">
             <p>
               ProfessionalTeaching on many Computer Application and programming language with good
               communication. This is your Chance for
@@ -36,7 +36,7 @@ const HeroSection = () => {
           </button>
         </div>
       </aside>
-      <aside className="w-1/2 image-side shrink-0">
+      <aside className="max-2xl:w-3/5 w-1/2 image-side shrink-0">
         <Image src={heroImage} alt="hero image" />
       </aside>
     </section>

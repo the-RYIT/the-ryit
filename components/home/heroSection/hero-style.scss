@@ -79,3 +79,187 @@ section.heroSection {
         }
     }
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1280px) {
+    section.heroSection {
+
+        aside.text-side h1:first-child {
+            font-size: 6rem;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1180px) {
+    section.heroSection {
+
+        height: 90vh;
+
+        aside.text-side h1:first-child {
+            font-size: 5.4rem;
+        }
+
+
+        aside.image-side {
+
+            width: 60%;
+        }
+
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1180px) and (min-width: 1024px) {
+    section.heroSection {
+
+        height: 85vh;
+
+        aside.text-side h1:first-child {
+            font-size: 4.6rem;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 625px) {
+    section.heroSection {
+
+        height: 75vh;
+
+
+        aside.image-side {
+
+            width: 55%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    section.heroSection aside.text-side {
+
+        h1 {
+            font-size: 2rem;
+
+
+        }
+
+        p {
+            font-size: 1.2rem;
+
+        }
+
+        .contactBtn {
+            width: 8rem;
+            height: 2.5rem;
+        }
+    }
+
+    section.heroSection aside.image-side {
+        padding-top: 2rem;
+        align-items: flex-start;
+
+        img {
+
+            height: 70%;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1020px) and (min-width: 900px) {
+
+    section.heroSection aside.text-side {
+
+        h1 {
+
+
+            &:first-child {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    section.heroSection aside.text-side {
+
+        h1 {
+
+            &:first-child {
+                font-size: clamp(2.8rem, 3.4rem, 3.8rem);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    section.heroSection {
+
+        height: 60vh;
+
+
+    }
+
+    section.heroSection aside.text-side {
+
+
+        h1 {
+            font-size: 1rem;
+
+            &:first-child {
+                font-size: 2rem;
+                // letter-spacing: -.5px;
+            }
+        }
+
+        p {
+            font-size: .9rem;
+        }
+
+        .contactBtn {
+            width: 8rem;
+            height: 2.5rem;
+
+            a {
+                font-size: .9rem;
+
+            }
+
+            svg {
+                width: 1.1rem;
+            }
+        }
+    }
+
+
+    section.heroSection aside.image-side {
+        padding-top: 2rem;
+        align-items: flex-start;
+
+        img {
+
+            height: 72%;
+        }
+    }
+
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    section.heroSection {
+
+        height: 110vh;
+
+        aside.text-side h1:first-child {
+            font-size: 3.8rem;
+        }
+    }
+}
