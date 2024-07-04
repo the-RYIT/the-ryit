@@ -37,7 +37,7 @@ const HeroSection = () => {
         </div>
       </aside>
       <aside className="max-2xl:w-3/5 w-1/2 image-side shrink-0">
-        <Image src={heroImage} alt="hero image" />
+        <Image placeholder="blur" src={heroImage} alt="hero image" priority />
       </aside>
     </section>
   );
