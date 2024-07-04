@@ -1,0 +1,87 @@
+#Card-container{
+    height: 380px;
+    width: 290px;
+    border: 1px solid #8a8989;
+    border-radius: 15px;
+    min-width: 250px;
+    transition: all ease 0.2s;
+    &:hover{
+        box-shadow: 0px 0px 10px 1px #2865de55;
+    }
+}
+#card-image{
+    height: 150px;
+    width: 100%;
+    // background-color: aqua;
+    border-radius:  15px 15px 0 0;
+
+    img{
+        height: inherit;
+        width: inherit;
+        border-radius:  15px 15px 0 0;
+
+    }
+}
+
+#card-details{
+    height: calc(400px - 180px);
+    width: 100%;
+    // background-color: thistle;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: start;
+    // gap: 5px;
+    padding: 0.8rem;
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+        position: relative;
+        bottom: 5px;
+    }
+}
+#course-features{
+    margin-top: 0.8rem;
+    height: auto;
+    width: 100%;
+    // background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    h5{
+        // border: 1px solid rgb(160, 160, 160);
+        background-color: #D9E6FF;
+        padding:2px 8px 2px 8px ;
+        border-radius: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+#button-div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: aquamarine;
+}
+#view-course-btn{
+    height: 3rem;
+    width: 8rem;
+    padding:15px auto;
+    background-color: #2866DE;
+    border-radius: 15px;
+    color: #fff;
+    &:hover{
+        background-color: #fff;
+        border: 1px solid #2866DE;
+        color: #000;
+    }
+}
