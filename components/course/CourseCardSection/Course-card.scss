@@ -13,6 +13,9 @@
         box-shadow: 9px 9px 10px 0px #2865de4f;
         transform: scale(1.1);
     }
+    &:hover #card-details{
+        background-color: #fff;
+    }
 }
 
 #card-image {
