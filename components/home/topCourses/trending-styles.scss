@@ -1,0 +1,26 @@
+.trendingCourse-section {
+    img {
+        transition: all 0.3s ease-in-out;
+
+        &:nth-child(1) {
+            animation: rotateIng 8s cubic-bezier(.28, .16, .61, .42) reverse infinite;
+        }
+
+        &:nth-child(2) {
+            height: 65%;
+
+            animation: rotateIng 6s linear infinite;
+        }
+    }
+
+}
+
+@keyframes rotateIng {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
