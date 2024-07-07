@@ -10,6 +10,8 @@ section.heroSection {
             line-height: .9;
 
             &:first-child {
+                word-spacing: -1px;
+                letter-spacing: -1px;
                 font-size: 7rem;
                 text-transform: uppercase;
             }
@@ -80,6 +82,22 @@ section.heroSection {
     }
 }
 
+
+
+
+// Responsive
+
+
+@media screen and (max-width: 1536px) {
+    section.heroSection {
+        aside.image-side {
+
+
+            width: 50%;
+        }
+    }
+}
+
 @media screen and (max-width: 1440px) and (min-width: 1280px) {
     section.heroSection {
 
@@ -127,7 +145,7 @@ section.heroSection {
 @media screen and (max-width: 1024px) and (min-width: 625px) {
     section.heroSection {
 
-        height: 75vh;
+        height: 72vh;
 
 
         aside.image-side {
@@ -172,9 +190,17 @@ section.heroSection {
 
 }
 
+@media screen and (max-width: 1025px) and (min-width: 666px) {
+
+    section.heroSection {
+        height: 55vh;
+    }
+}
+
 @media screen and (max-width: 1020px) and (min-width: 900px) {
 
     section.heroSection aside.text-side {
+
 
         h1 {
 
@@ -215,7 +241,9 @@ section.heroSection {
             font-size: 1rem;
 
             &:first-child {
-                font-size: 2rem;
+                word-spacing: 0px;
+                letter-spacing: 0px;
+                font-size: 1.95rem;
                 // letter-spacing: -.5px;
             }
         }

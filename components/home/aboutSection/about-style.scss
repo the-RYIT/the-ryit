@@ -1,0 +1,35 @@
+section.aboutSection {
+    margin-top: 4rem;
+    padding-top: 2rem;
+
+    .left-about-part {
+        text-align: center;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            font-size: 3rem;
+        }
+
+        .imageDiv {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                border-radius: 20px;
+                height: 95%;
+                object-fit: cover;
+
+            }
+        }
+
+    }
+
+    .right-about-part {
+        padding: 0 4rem;
+    }
+}

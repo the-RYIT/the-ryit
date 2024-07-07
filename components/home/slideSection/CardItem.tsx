@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import style from "./style.module.scss";
+import { manrope } from "@/utils/fonts/fonts";
 
 interface ICardItemProps {
   title: string;
@@ -16,7 +17,7 @@ const CardItem = ({ title, subText, img }: ICardItemProps) => {
       </div>
       <div>
         <h2 className={style.card_title}>{title}</h2>
-        <p className={style.card_subText}>{subText}</p>
+        <p className={`${style.card_subText} ${manrope.className}`}>{subText}</p>
       </div>
     </div>
   );
