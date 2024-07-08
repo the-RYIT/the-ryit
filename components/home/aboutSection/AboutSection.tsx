@@ -6,7 +6,7 @@ import LinkBtn from "@/components/LinkBtn/LinkBtn";
 
 const AboutSection = () => {
   return (
-    <section className="flex w-full md:h-screen aboutSection">
+    <section className="flex w-full xl:h-screen h-[50vh] aboutSection">
       <div className="left-about-part md:w-2/5 shrink-0">
         <h1 className={ntr.className}>About Us</h1>
         <div className="imageDiv">
@@ -53,7 +53,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="div mt-10">
+        <div className="div sm:mt-10 mt-4">
           <LinkBtn link="/contacts" title="Learn More" extraClass="about-link-btn" />
         </div>
       </div>

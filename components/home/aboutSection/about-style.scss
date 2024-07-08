@@ -1,10 +1,10 @@
 section.aboutSection {
     margin-top: 4rem;
     padding-top: 2rem;
+    position: relative;
 
     .left-about-part {
         text-align: center;
-        position: relative;
         display: flex;
         justify-content: center;
 
@@ -120,6 +120,64 @@ section.aboutSection {
 
         .about-link-btn {
             width: 13rem;
+            height: 2.9rem;
         }
     }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    section.aboutSection {
+        height: 45vh;
+
+        .left-about-part h1 {
+            font-size: 6.5rem;
+            left: 13%;
+        }
+
+        .right-about-part {
+            h3 {
+                font-size: .8rem;
+            }
+
+            .about-details-head {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: .93rem;
+            }
+
+            .about-link-btn {
+                width: 10rem;
+                height: 2.6rem;
+
+                a {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 625px) {
+    section.aboutSection {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+
+        .left-about-part h1 {
+            font-size: 5.3rem;
+            left: 15%;
+            top: -5px;
+            background: linear-gradient(0deg, rgb(255, 255, 255) 52%, rgb(39, 102, 220) 83%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+
 }
