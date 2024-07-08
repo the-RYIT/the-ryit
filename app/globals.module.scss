@@ -1,0 +1,60 @@
+ .linkBtn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: .45rem;
+     background-color: var(--button-bg);
+     border-radius: 20px;
+     transition: transform 0.2s ease-in-out;
+     outline: none;
+     border: 2px solid transparent;
+     width: 10rem;
+     height: 2.8rem;
+     transform: scale(1.1);
+     letter-spacing: 2px;
+     cursor: pointer;
+     color: white;
+
+     svg {
+         width: 1.8rem;
+         transition: transform 0.3s ease-in-out;
+     }
+
+     &:hover {
+         color: black;
+         border-color: var(--button-bg);
+         background-color: var(--button-bg-hover);
+
+         svg {
+             transform: translateX(5px);
+         }
+     }
+ }
+
+
+
+ @media screen and (max-width: 1020px) {
+
+     .linkBtn {
+         width: 8rem;
+         height: 2.5rem;
+     }
+
+ }
+
+ @media screen and (max-width: 625px) {
+
+     .linkBtn {
+         width: 8rem;
+         height: 2.5rem;
+
+         a {
+             font-size: .9rem;
+
+         }
+
+         svg {
+             width: 1.1rem;
+         }
+     }
+ }

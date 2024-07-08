@@ -1,6 +1,7 @@
 .trendingCourse-section {
 
     overflow: hidden;
+    user-select: none;
 
     img {
         transition: all 0.3s ease-in-out;
@@ -77,6 +78,20 @@
         height: 80vh;
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .trendingCourse-section {
+
+        img {
+
+            &:nth-child(2) {
+                width: 60%;
+            }
+        }
+    }
+}
+
 
 
 @media screen and (max-width: 625px) {

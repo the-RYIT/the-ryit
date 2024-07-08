@@ -5,12 +5,24 @@ section.aboutSection {
     .left-about-part {
         text-align: center;
         position: relative;
+        display: flex;
+        justify-content: center;
 
         h1 {
             position: absolute;
             z-index: 2;
             top: 0;
-            font-size: 3rem;
+            font-size: 7rem;
+            font-weight: bold;
+            line-height: .8;
+
+
+            color: transparent;
+            background: linear-gradient(0deg, rgb(255, 255, 255) 34%, rgb(39, 102, 220) 77%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
         }
 
         .imageDiv {
@@ -31,5 +43,83 @@ section.aboutSection {
 
     .right-about-part {
         padding: 0 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .6rem;
+
+
+        h3 {
+            color: #414141;
+        }
+
+        .about-details-head {
+            font-size: 2.4rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            line-height: 1;
+            cursor: default;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: var(--light-blue-color);
+                width: 105%;
+            }
+
+            span {
+                position: absolute;
+                transition: width 0.3s ease-in-out;
+                bottom: 0px;
+                left: 0;
+                width: 0%;
+                background: var(--button-bg);
+                height: 2px;
+                z-index: 1;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+
+            &:hover {
+                span {
+                    width: 105%;
+                }
+            }
+
+
+        }
+
+        p {
+            color: #414141;
+            transition: scale 0.3s ease-in-out;
+
+            span {
+                color: var(--button-bg);
+            }
+        }
+
+
+        .about-factor {
+            P {
+                cursor: pointer;
+            }
+
+            p:hover {
+                color: black;
+                scale: 1.01;
+
+            }
+        }
+
+        .about-link-btn {
+            width: 13rem;
+        }
     }
 }
