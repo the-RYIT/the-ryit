@@ -15,7 +15,7 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
             </div>
           </div>
           <div className={`${ntr.className} course-header`}>
-            <h1>Python Course</h1>
+            <h1>Python Course {params.courseId}</h1>
             <h2>Intermidiate</h2>
           </div>
         </div>
@@ -24,17 +24,15 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
             <h1 className={`${ntr.className}`}>About this Course</h1>
             <div className="about-course">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-                distinctio, tenetur odit eveniet earum delectus facilis suscipit
-                illum autem laborum veniam ad, hic consequatur nihil vel quam
-                aperiam esse maxime assumenda odio? Ipsam fugit saepe ad.
-                Explicabo eos ad ab quod quo, non magnam, a aut, error maiores
-                reprehenderit aperiam consequatur quis. Cupiditate, fuga ipsam
-                nemo, incidunt a ad natus officiis, unde voluptas debitis
-                facilis porro dolorem nesciunt atque aperiam corrupti rerum est
-                maxime minus optio. Veritatis similique culpa, quod id beatae
-                maxime fuga neque a perferendis iusto, recusandae possimus
-                nostrum sunt repellendus sed illo, labore nemo quae? Eius, sit.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio, tenetur
+                odit eveniet earum delectus facilis suscipit illum autem laborum veniam ad, hic
+                consequatur nihil vel quam aperiam esse maxime assumenda odio? Ipsam fugit saepe ad.
+                Explicabo eos ad ab quod quo, non magnam, a aut, error maiores reprehenderit aperiam
+                consequatur quis. Cupiditate, fuga ipsam nemo, incidunt a ad natus officiis, unde
+                voluptas debitis facilis porro dolorem nesciunt atque aperiam corrupti rerum est
+                maxime minus optio. Veritatis similique culpa, quod id beatae maxime fuga neque a
+                perferendis iusto, recusandae possimus nostrum sunt repellendus sed illo, labore
+                nemo quae? Eius, sit.
               </p>
             </div>
             <h2>Course lessons</h2>
@@ -63,10 +61,9 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
             <h2>Who is this course for?</h2>
             <div className="course-eligibily">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae quam aspernatur at tempore asperiores commodi esse!
-                Animi inventore veritatis nulla impedit necessitatibus, tempora
-                iure ad! Nihil expedita obcaecati iure et?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quam aspernatur
+                at tempore asperiores commodi esse! Animi inventore veritatis nulla impedit
+                necessitatibus, tempora iure ad! Nihil expedita obcaecati iure et?
               </p>
             </div>
           </div>
@@ -83,20 +80,12 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
             <h2>Extra Facilities</h2>
             <div className="course-extra-facilities">
               <ul className="ul">
-                <li>
-                  {" "}
-                  Ab quod vitae labore eaque! Lorem ipsum dolor sit amet.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  eveniet?
-                </li>
+                <li> Ab quod vitae labore eaque! Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eveniet?</li>
               </ul>
             </div>
             <div className="apply-course">
-                <button>
-                    Apply Now
-                </button>
+              <button>Apply Now</button>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import "@/components/course/CourseCardSection/Course-card.scss";
 import Image from "next/image";
 import { ntr } from "@/utils/fonts/fonts";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 // making interface for courseCard elements(props)
 interface Prop {
@@ -30,8 +31,8 @@ export const CourseCard = (props: Prop) => {
           <h1 className={`${ntr.className}`}>{Header}</h1>
           <p>{Description}</p>
           <div id="button-div">
-            <button id="view-course-btn" >
-              View Details
+            <button id="view-course-btn">
+              <Link href={"course/1"}>View Details</Link>
             </button>
           </div>
           <div id="course-features">
