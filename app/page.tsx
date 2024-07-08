@@ -1,6 +1,7 @@
 import AboutSection from "@/components/home/aboutSection/AboutSection";
 import HeroSection from "@/components/home/heroSection/HeroSection";
 import SlideSection from "@/components/home/slideSection/SlideSection";
+import SuccessIncreasing from "@/components/home/success/SuccessIncreasing";
 import TrendingCourse from "@/components/home/topCourses/TrendingCourses";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <SlideSection />
       <AboutSection />
       <TrendingCourse />
+      <SuccessIncreasing />
     </main>
   );
 }

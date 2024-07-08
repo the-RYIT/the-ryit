@@ -1,0 +1,86 @@
+.countUp-section {
+    background: var(--shade-gray-color);
+
+    .section-left-part {
+        h1 {
+            font-size: 9.5rem;
+            line-height: .8;
+            color: var(--black-gray-color);
+            text-transform: uppercase;
+
+            span {
+                margin-left: 3rem;
+            }
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
+
+        .countUp-section-linkBtn {
+            margin-top: 2rem;
+        }
+
+    }
+
+    .section-right-part {
+        gap: 2rem;
+        align-items: flex-end;
+        position: relative;
+        top: -5%;
+
+
+
+        .countUp {
+            display: flex;
+            gap: 1rem;
+            font-size: 6.7rem;
+            align-items: flex-end;
+            position: relative;
+            padding-bottom: 2rem;
+            width: 75%;
+            justify-content: flex-end;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: var(--light-blue-color);
+                width: 105%;
+            }
+
+            span {
+                position: absolute;
+                transition: width 0.3s ease-in-out;
+                bottom: 0px;
+                left: 0;
+                width: 0%;
+                background: var(--button-bg);
+                height: 2px;
+                z-index: 1;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+
+            &:hover {
+                span {
+                    width: 105%;
+                }
+            }
+
+
+            h1 {
+                line-height: 1;
+                font-weight: 600;
+                color: var(--black-gray-color);
+            }
+
+            h4 {
+
+                line-height: .6;
+            }
+        }
+    }
+}
