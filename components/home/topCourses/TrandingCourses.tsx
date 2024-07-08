@@ -8,7 +8,7 @@ const TrendingCourse = () => {
     <section className="relative w-full mt-16 h-screen flex justify-center items-center trendingCourse-section">
       <Image src={img1} alt="outer-ring" className="absolute h-full" />
       <Image src={img2} alt="outer-ring" className="absolute" />
-      <div className="center-text">Curses</div>
+      <div className="center-text">Courses</div>
     </section>
   );
 };
