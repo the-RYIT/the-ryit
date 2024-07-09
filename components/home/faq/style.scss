@@ -1,0 +1,117 @@
+.faq-section {
+    background: var(--shade-gray-color);
+}
+
+
+.faq-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* Ensure children stack vertically */
+    position: relative;
+    z-index: 1;
+
+    .faq-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .accordion-header {
+            cursor: pointer;
+            user-select: none;
+            height: 3.6rem;
+            border: 2px solid var(--button-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            justify-content: space-between;
+            padding: 0 1.2rem;
+            color: black;
+            transition: color 400ms ease-in-out, border-radius 300ms ease-in-out;
+
+            span {
+                position: absolute;
+                right: 0%;
+                width: 10%;
+                height: 100%;
+                background: var(--button-bg);
+                border-radius: 54px 0px 0 0px;
+                z-index: -1;
+                transition: all 0.3s ease-in-out;
+            }
+
+            img {
+                width: 2rem;
+                aspect-ratio: 1;
+                transition: transform 0.3s ease-in-out;
+            }
+
+
+            &:hover {
+                color: white;
+
+                span {
+                    width: 100%;
+                    border-radius: 0;
+                }
+
+                img {
+                    transform: translateY(4px);
+
+                }
+            }
+        }
+
+        .accordion-open {
+            color: white;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            span {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            img {
+                transform: translateY(4px);
+
+            }
+        }
+
+
+
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+
+            border: 2px solid transparent;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 625px) {
+
+    .faq-section {
+        margin-top: 2rem;
+    }
+
+    .faq-container {
+        width: 100%;
+
+        .faq-content .accordion-header span {
+            width: 20%;
+        }
+
+        .faq-content .accordion-open span {
+            width: 100%;
+        }
+
+    }
+
+}

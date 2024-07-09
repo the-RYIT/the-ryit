@@ -1,10 +1,11 @@
 import { ntr, manrope } from "@/utils/fonts/fonts";
 import "./style.scss";
 import LinkBtn from "@/components/LinkBtn/LinkBtn";
+import CounterUpSection from "./CounterUpSection";
 
 const SuccessIncreasing = () => {
   return (
-    <section className="countUp-section w-full md:h-[90vh] flex sm:flex-row flex-col">
+    <section className="countUp-section w-full md:h-[90vh] flex md:flex-row flex-col gap-6   max-md:px-8">
       <div className="section-left-part sm:w-2/5 flex flex-col justify-center">
         <h1 className={ntr.className}>
           Success
@@ -19,23 +20,7 @@ const SuccessIncreasing = () => {
         <LinkBtn title="Explore" link="/contacts" extraClass="countUp-section-linkBtn" />
       </div>
 
-      <div className="section-right-part pr-8 flex flex-col justify-center grow">
-        <div className="countUp">
-          <h4 className={ntr.className}>Students</h4>
-          <h1 className={manrope.className}>200+</h1>
-          <span></span>
-        </div>
-        <div className="countUp">
-          <h4 className={ntr.className}>Teachers</h4>
-          <h1 className={manrope.className}>100+</h1>
-          <span></span>
-        </div>
-        <div className="countUp">
-          <h4 className={ntr.className}>Awards</h4>
-          <h1 className={manrope.className}>50+</h1>
-          <span></span>
-        </div>
-      </div>
+      <CounterUpSection />
     </section>
   );
 };

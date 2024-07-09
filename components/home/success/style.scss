@@ -1,5 +1,5 @@
 .countUp-section {
-    background: var(--shade-gray-color);
+
 
     .section-left-part {
         h1 {
@@ -83,4 +83,66 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 1230px) {
+    .countUp-section {
+        height: auto;
+        margin-bottom: 5rem;
+
+        .section-left-part {
+            h1 {
+                font-size: 6.5rem;
+            }
+
+        }
+
+        .section-right-part {
+            .countUp {
+                font-size: 4.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .countUp-section {
+        padding: 0 1rem;
+
+        .section-left-part {
+            h1 {
+                font-size: 5rem;
+            }
+
+            h4 {
+                font-size: .96rem;
+            }
+
+            .countUp-section-linkBtn {
+                margin-top: 1rem;
+            }
+        }
+
+        .section-right-part {
+            .countUp {
+                width: 100%;
+                font-size: 4rem;
+                padding-bottom: 1rem;
+
+
+                &::after {
+                    width: 100%;
+                }
+
+                &:hover {
+                    span {
+                        width: 105%;
+                    }
+                }
+
+            }
+        }
+    }
+
 }
