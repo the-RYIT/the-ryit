@@ -15,14 +15,15 @@ section.aboutSection {
             font-size: 7rem;
             font-weight: bold;
             line-height: .8;
+            color: var(--button-bg);
 
+            // color: transparent;
+            // background: linear-gradient(0deg, rgb(255, 255, 255) 34%, rgb(39, 102, 220) 77%);
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
 
-            color: transparent;
-            background: linear-gradient(0deg, rgb(255, 255, 255) 34%, rgb(39, 102, 220) 77%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-
+            mask-image: linear-gradient(black 40%, transparent 75%);
         }
 
         .imageDiv {
@@ -162,6 +163,28 @@ section.aboutSection {
 
 }
 
+
+@media screen and (max-width: 768px) {
+
+    section.aboutSection {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+
+        .left-about-part h1 {
+            font-size: 8rem;
+        }
+
+        .left-about-part .imageDiv {
+            height: 60vh;
+        }
+
+        .right-about-part h3 {
+            font-size: 1rem;
+        }
+    }
+}
+
 @media screen and (max-width: 625px) {
     section.aboutSection {
         flex-direction: column;
@@ -172,10 +195,14 @@ section.aboutSection {
             font-size: 5.3rem;
             left: 15%;
             top: -5px;
-            background: linear-gradient(0deg, rgb(255, 255, 255) 52%, rgb(39, 102, 220) 83%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            // background: linear-gradient(0deg, rgb(255, 255, 255) 52%, rgb(39, 102, 220) 83%);
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
+
+            color: var(--button-bg);
+
+            mask-image: linear-gradient(black 40%, transparent 75%);
         }
 
     }

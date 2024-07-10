@@ -1,4 +1,5 @@
 import AboutSection from "@/components/home/aboutSection/AboutSection";
+import ContactSection from "@/components/home/contacts/ContactSection";
 import FAQSection from "@/components/home/faq/FAQSection";
 import HeroSection from "@/components/home/heroSection/HeroSection";
 import SlideSection from "@/components/home/slideSection/SlideSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <TrendingCourse />
       <SuccessIncreasing />
       <FAQSection />
+      <ContactSection />
     </main>
   );
 }

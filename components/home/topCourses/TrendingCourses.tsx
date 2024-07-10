@@ -7,7 +7,10 @@ import { manrope } from "@/utils/fonts/fonts";
 
 const TrendingCourse = () => {
   return (
-    <section className="relative w-full mt-16 h-screen flex justify-center items-center trendingCourse-section">
+    <section
+      className="relative w-full mt-16 h-screen flex justify-center items-center trendingCourse-section"
+      id="top-courses"
+    >
       <Image src={img1} alt="outer-ring" className="absolute h-full" />
       <Image src={img2} alt="outer-ring" className="absolute" />
       <div className="center-text flex flex-col justify-center items-center">

@@ -1,6 +1,4 @@
-.faq-section {
-    background: var(--shade-gray-color);
-}
+// .faq-section {}
 
 
 .faq-container {
@@ -91,6 +89,18 @@
             transition: max-height 0.3s ease, padding 0.3s ease;
         }
 
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .faq-container {
+        .faq-content .accordion-header span {
+            width: 15%;
+        }
+
+        .faq-content .accordion-open span {
+            width: 100%;
+        }
     }
 }
 
