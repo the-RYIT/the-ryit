@@ -13,7 +13,7 @@ const LinkBtn = ({
 }) => {
   return (
     <button className={`${manrope.className} ${global.linkBtn} ${extraClass}`}>
-      <Link href={link}> {title}</Link>
+      <Link href={"/contact"}> {title}</Link>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           fill="none"
