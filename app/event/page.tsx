@@ -1,7 +1,12 @@
+import AllEvents from "@/components/events/AllEvents";
+import TopEvents from "@/components/events/TopEvents";
+
 const page = () => {
   return (
-    <main className="w-screen mainSection">
-      <h1>Get Notification All Event in Early moment</h1>
+    <main className="w-screen ">
+      <TopEvents />
+
+      <AllEvents />
     </main>
   );
 };
