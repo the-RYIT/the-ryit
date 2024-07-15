@@ -292,3 +292,20 @@ section.heroSection {
         }
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    section.heroSection {
+
+        aside.text-side h1:first-child {
+            font-size: 3.4rem;
+        }
+
+        aside.text-side p {
+            font-size: 1.1rem;
+        }
+
+        #sub-hero-text {
+            padding-top: 8rem;
+        }
+    }
+}

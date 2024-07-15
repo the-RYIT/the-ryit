@@ -22,7 +22,7 @@ const MobileNav = () => {
 
       <nav
         className={`md:hidden block mobile-nav ${
-          !isMobileNavOpen ? "translate-y-[-100%]" : "translate-y-0"
+          !isMobileNavOpen ? "translate-y-[-150%]" : "translate-y-0"
         }`}
       >
         <ul className="mobile-nav-ul">
