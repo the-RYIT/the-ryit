@@ -1,8 +1,14 @@
+.wrapper{
+ 
+  height: 100vh;
+  width: 100%;
+}
 #header {
   height: auto;
   // background-color: thistle;
   margin: 0;
   padding: 0;
+
   h1 {
     display: flex;
     justify-content: start;
@@ -73,6 +79,7 @@
   width: 100%;
   //   background-color: bisque;
   display: flex;
+
 }
 
 .detail {
@@ -130,3 +137,8 @@
   background-color: rgb(50, 180, 195);
 }
 
+#contact-form{
+  height: 90vh;
+  width: 100%;
+  background-color: var(--button-bg);
+}

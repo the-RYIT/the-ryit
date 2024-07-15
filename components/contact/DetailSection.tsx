@@ -40,6 +40,7 @@ export const DetailSection = () => {
 
   return (
     <>
+    <div className="wrapper">
       <div id="header">
         <h1 className={`${ntr.className}`}>Contact Us</h1>
       </div>
@@ -106,6 +107,10 @@ export const DetailSection = () => {
           <p>{contactDetails[selectedTab].phone}</p>
         </div>
       </div>
+      <div id="contact-form">
+
+      </div>
+      </div> 
     </>
   );
 };
