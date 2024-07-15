@@ -3,6 +3,7 @@
 import { ntr, manrope } from "@/utils/fonts/fonts";
 import "@/components/contact/DetailSection.scss";
 import { useState } from "react";
+import { ContactForm } from "./contactComponent/ContactForm";
 
 type Tab = "chaipat" | "goura" | "bhatora";
 
@@ -35,82 +36,89 @@ const contactDetails: {
   },
 };
 
+// create forms data type
+
 export const DetailSection = () => {
   const [selectedTab, setSelectedTab] = useState<Tab>("chaipat");
 
   return (
     <>
-    <div className="wrapper">
-      <div id="header">
-        <h1 className={`${ntr.className}`}>Contact Us</h1>
+      <div className="wrapper">
+        <div id="header">
+          <h1 className={`${ntr.className}`}>Contact Us</h1>
+        </div>
+        <div id="about">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+            ea vero suscipit obcaecati numquam ad blanditiis quis, deserunt
+            quaerat soluta fugit, a nesciunt distinctio odio praesentium
+            aliquid. Animi ut quae ullam magni libero minus mollitia quos cum
+            quidem incidunt, rem voluptatum voluptas laboriosam iusto corrupti
+            consequuntur, earum, dolorem assumenda ad.
+          </p>
+        </div>
+        <div id="map-tab" className={`${ntr.className}`}>
+          <div
+            className={`map-tab-container ${
+              selectedTab === "chaipat" ? "active" : ""
+            }`}
+            onClick={() => setSelectedTab("chaipat")}
+          >
+            <p>CHAIPAT RYCTA</p>
+          </div>
+          <div
+            className={`map-tab-container ${
+              selectedTab === "goura" ? "active" : ""
+            }`}
+            onClick={() => setSelectedTab("goura")}
+          >
+            <p>GOURA RYCTA</p>
+          </div>
+          <div
+            className={`map-tab-container ${
+              selectedTab === "bhatora" ? "active" : ""
+            }`}
+            onClick={() => setSelectedTab("bhatora")}
+          >
+            <p>BHATORA RYCTA</p>
+          </div>
+        </div>
+        <div id="detail-address" className={`${ntr.className}`}>
+          <div className="map">
+            <iframe
+              src={iframeSources[selectedTab]}
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="sampleImage">
+            <div className="images"></div>
+            <div className="images"></div>
+            <div className="images"></div>
+          </div>
+          <div className="detail">
+            <h1 className={`${ntr.className}`}>Details</h1>
+            <h2>Address</h2>
+            <p>{contactDetails[selectedTab].address}</p>
+            <h2>Email</h2>
+            <p>{contactDetails[selectedTab].email}</p>
+            <h2>Phone</h2>
+            <p>{contactDetails[selectedTab].phone}</p>
+          </div>
+        </div>
+        <div id="contact-form">
+          <div className="form-header">
+            <p>Share Your Thoughts</p>
+          </div>
+          <div className="form-container">
+            <ContactForm />
+          </div>
+        </div>
       </div>
-      <div id="about">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ea
-          vero suscipit obcaecati numquam ad blanditiis quis, deserunt quaerat
-          soluta fugit, a nesciunt distinctio odio praesentium aliquid. Animi ut
-          quae ullam magni libero minus mollitia quos cum quidem incidunt, rem
-          voluptatum voluptas laboriosam iusto corrupti consequuntur, earum,
-          dolorem assumenda ad.
-        </p>
-      </div>
-      <div id="map-tab" className={`${ntr.className}`}>
-        <div
-          className={`map-tab-container ${
-            selectedTab === "chaipat" ? "active" : ""
-          }`}
-          onClick={() => setSelectedTab("chaipat")}
-        >
-          <p>CHAIPAT RYCTA</p>
-        </div>
-        <div
-          className={`map-tab-container ${
-            selectedTab === "goura" ? "active" : ""
-          }`}
-          onClick={() => setSelectedTab("goura")}
-        >
-          <p>GOURA RYCTA</p>
-        </div>
-        <div
-          className={`map-tab-container ${
-            selectedTab === "bhatora" ? "active" : ""
-          }`}
-          onClick={() => setSelectedTab("bhatora")}
-        >
-          <p>BHATORA RYCTA</p>
-        </div>
-      </div>
-      <div id="detail-address" className={`${ntr.className}`}>
-        <div className="map">
-          <iframe
-            src={iframeSources[selectedTab]}
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div className="sampleImage">
-          <div className="images"></div>
-          <div className="images"></div>
-          <div className="images"></div>
-        </div>
-        <div className="detail">
-          <h1 className={`${ntr.className}`}>Details</h1>
-          <h2>Address</h2>
-          <p>{contactDetails[selectedTab].address}</p>
-          <h2>Email</h2>
-          <p>{contactDetails[selectedTab].email}</p>
-          <h2>Phone</h2>
-          <p>{contactDetails[selectedTab].phone}</p>
-        </div>
-      </div>
-      <div id="contact-form">
-
-      </div>
-      </div> 
     </>
   );
 };

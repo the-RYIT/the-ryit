@@ -1,0 +1,21 @@
+.TextAreaInput {
+  height: auto;
+  width: auto;
+  min-width: 40%;
+  // background-color: rgb(49, 86, 86);
+  label {
+    display: block;
+    font-size: 1.3rem;
+    margin: 5px 0px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  textarea {
+    height: 100px;
+    min-width: 50%;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+  }
+}

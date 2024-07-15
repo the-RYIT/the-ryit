@@ -137,8 +137,44 @@
   background-color: rgb(50, 180, 195);
 }
 
+// This is for contact form
 #contact-form{
-  height: 90vh;
+  margin-top: 100px;
+  height: 80vh;
   width: 100%;
   background-color: var(--button-bg);
+  display: flex;
+  border-radius: 100px 100px 0 0 ;
+  margin-bottom: 5px;
+
+}
+
+
+.form-header{
+  height: inherit;
+  width: 50%;
+  // background-color: aquamarine;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 6rem;
+  p{
+    font-size: 7rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+  }
+}
+
+.form-container{
+  height: inherit;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b4b3b3;
+  border-left: none;
+  border-radius: 0 100px 0 0 ;
 }

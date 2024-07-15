@@ -1,0 +1,58 @@
+.formDesign{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background-color: var(--light-blue-color);
+    padding: 1rem 4rem;
+    border-radius: 16px;
+}
+
+.form-name{
+    // background-color: aqua;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    input{
+        border: 1px solid #b4b3b3;
+        &:focus-within{
+            border: 1px solid var(--button-bg);
+        }
+    }
+}
+.form-email,.form-phone,.form-address,.form-message{
+    width: 100%;
+    height: auto;
+    // background-color: aqua;
+    input,textarea{
+        width:100% ;
+        resize: none;
+        border: 1px solid #b4b3b3;
+        &:focus-within{
+            border: 1px solid var(--button-bg);
+        }
+
+    }
+}
+
+.submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--button-bg);
+    height: 40px;
+    color: #fff;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: ease all 0.3s;
+    &:hover{
+        color: #000;
+        background-color: var(--light-blue-color);
+        border: 1px solid #b4b4b4;
+    }
+}
+
