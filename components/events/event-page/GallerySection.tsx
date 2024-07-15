@@ -4,7 +4,7 @@ import { eventImageArray } from "@/utils/assets";
 eventImageArray;
 const GallerySection = ({ eventId }: { eventId: string }) => {
   return (
-    <section className="mt-12 flex flex-wrap gap-8 px-0">
+    <section className="mt-12 flex flex-wrap gap-8 px-0 pb-4">
       <div className="event-exhibit-image">
         <Image src={eventImageArray[Number(eventId)]} alt="E" />
       </div>

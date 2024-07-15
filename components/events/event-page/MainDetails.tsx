@@ -11,7 +11,7 @@ const MainDetails = ({ eventId }: { eventId: string }) => {
   return (
     <section className="px-0">
       <div className="upper-part flex sm:flex-row flex-col gap-8">
-        <div className="event-image w-1/3 shrink-0">
+        <div className="event-image sm:w-1/3 w-full shrink-0">
           <Image
             src={eventImageArray[Number(eventId)]}
             alt="Event-image"

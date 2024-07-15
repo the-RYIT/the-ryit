@@ -11,7 +11,7 @@ const AllEvents = () => {
       </div>
       <div className="all-event-section-right-part grow flex flex-wrap gap-7">
         <EventItem id={0} />
-        <EventItem id={1} />s
+        <EventItem id={1} />
         <EventItem id={2} />
         <EventItem id={1} />
         <EventItem id={0} />

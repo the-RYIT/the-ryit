@@ -13,7 +13,10 @@ const HeroSection = () => {
           <h1 className="ml-4">Through Technology</h1>
         </div>
 
-        <div className="h-full flex flex-col items-start lg:justify-center justify-start lg:p-0 sm:pt-40 pt-24 gap-6">
+        <div
+          className="h-full flex flex-col items-start lg:justify-center justify-start lg:p-0 sm:pt-40 pt-24 gap-6"
+          id="sub-hero-text"
+        >
           <div className=" sm:w-[70%] w-full pr-3">
             <p>
               ProfessionalTeaching on many Computer Application and programming language with good

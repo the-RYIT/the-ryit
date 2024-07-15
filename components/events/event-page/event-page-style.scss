@@ -55,3 +55,17 @@
         box-shadow: 12px 12px 24px #00000075, -12px -12px 24px #9c9c9c9e;
     }
 }
+
+
+@media screen and (orientation: landscape) and (width<=768px) {
+
+    .event-exhibit-image {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .event-exhibit-image {
+        width: 100%;
+    }
+}

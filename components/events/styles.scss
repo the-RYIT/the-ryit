@@ -141,7 +141,7 @@
 
 
 
-@media (max-width: 990px) {
+@media screen and (max-width: 990px) {
 
     .event-card-item {
         width: 36%;
@@ -154,7 +154,30 @@
 
 }
 
-@media (max-width: 400px) {
+@media screen and (width<=480px) {
+
+    .event-card-item .event-details .event-title {
+        font-size: 1.2rem;
+    }
+
+    .event-card-item .event-details {
+        bottom: -35%;
+    }
+
+    .event-card-item .event-details .event-btn {
+        width: 9rem;
+
+        height: 2.8rem;
+
+        a {
+            font-size: 0.68rem;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
     .event-card-item {
         width: 100%;
 
