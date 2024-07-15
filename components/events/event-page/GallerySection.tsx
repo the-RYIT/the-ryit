@@ -1,10 +1,22 @@
+import Image from "next/image";
+
+import { eventImageArray } from "@/utils/assets";
+eventImageArray;
 const GallerySection = ({ eventId }: { eventId: string }) => {
   return (
-    <section>
-      {eventId}
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores quis tenetur?
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quam voluptatum omnis
-      laudantium obcaecati ad expedita veritatis repudiandae repellendus rem.k
+    <section className="mt-12 flex flex-wrap gap-8 px-0">
+      <div className="event-exhibit-image">
+        <Image src={eventImageArray[Number(eventId)]} alt="E" />
+      </div>
+      <div className="event-exhibit-image">
+        <Image src={eventImageArray[Number(eventId)]} alt="E" />
+      </div>
+      <div className="event-exhibit-image">
+        <Image src={eventImageArray[Number(eventId)]} alt="E" />
+      </div>
+      <div className="event-exhibit-image">
+        <Image src={eventImageArray[Number(eventId)]} alt="E" />
+      </div>
     </section>
   );
 };
