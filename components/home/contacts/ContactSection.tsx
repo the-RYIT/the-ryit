@@ -12,7 +12,7 @@ import LinkBtn from "@/components/LinkBtn/LinkBtn";
 const ContactSection = () => {
   return (
     <footer className="contact-section relative">
-      <section className="main-container fixed bottom-0 w-full xl:pt-20 md:pt-12">
+      <section className="main-container fixed bottom-0 w-full xl:pt-12 md:pt-12">
         <div className="contact-container flex sm:items-end sm:flex-row flex-col">
           <aside className="contact-left-part w-2/5 pr-4  flex flex-col justify-between ">
             <div>

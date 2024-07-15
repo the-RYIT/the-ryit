@@ -10,10 +10,11 @@ const AllEvents = () => {
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, in?</h4>
       </div>
       <div className="all-event-section-right-part grow flex flex-wrap gap-7">
-        <EventItem />
-        <EventItem />
-        <EventItem />
-        <EventItem />
+        <EventItem id={0} />
+        <EventItem id={1} />
+        <EventItem id={2} />
+        <EventItem id={1} />
+        <EventItem id={0} />
       </div>
     </section>
   );
