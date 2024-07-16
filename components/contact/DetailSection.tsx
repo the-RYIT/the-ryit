@@ -51,10 +51,6 @@ export const DetailSection = () => {
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
             ea vero suscipit obcaecati numquam ad blanditiis quis, deserunt
-            quaerat soluta fugit, a nesciunt distinctio odio praesentium
-            aliquid. Animi ut quae ullam magni libero minus mollitia quos cum
-            quidem incidunt, rem voluptatum voluptas laboriosam iusto corrupti
-            consequuntur, earum, dolorem assumenda ad.
           </p>
         </div>
         <div id="map-tab" className={`${ntr.className}`}>

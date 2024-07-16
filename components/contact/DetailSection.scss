@@ -4,15 +4,20 @@
   width: 100%;
 }
 #header {
+  
   height: auto;
   // background-color: thistle;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(164deg,  #D9E6FF, #fff,#D9E6FF);
 
   h1 {
     display: flex;
     justify-content: start;
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 0;
     padding: 0;
   }
@@ -22,14 +27,17 @@
   // background-color: azure;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
   }
 }
 
 #map-tab {
-  margin-top: 25px;
+  margin-top: 50px;
   margin-left: 3.5rem;
   height: auto;
   display: flex;
@@ -77,8 +85,9 @@
   margin-top: 20px;
   height: 60vh;
   width: 100%;
-  //   background-color: bisque;
+    // background-color: bisque;
   display: flex;
+  padding-left: 3rem;
 
 }
 
@@ -139,7 +148,7 @@
 
 // This is for contact form
 #contact-form{
-  margin-top: 100px;
+  margin-top: 50px;
   height: 80vh;
   width: 100%;
   background-color: var(--button-bg);
