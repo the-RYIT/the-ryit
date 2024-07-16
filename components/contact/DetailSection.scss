@@ -1,12 +1,23 @@
+.wrapper{
+ 
+  height: 100vh;
+  width: 100%;
+}
 #header {
+  
   height: auto;
   // background-color: thistle;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(164deg,  #D9E6FF, #fff,#D9E6FF);
+
   h1 {
     display: flex;
     justify-content: start;
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 0;
     padding: 0;
   }
@@ -16,14 +27,17 @@
   // background-color: azure;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
   }
 }
 
 #map-tab {
-  margin-top: 25px;
+  margin-top: 50px;
   margin-left: 3.5rem;
   height: auto;
   display: flex;
@@ -32,87 +46,144 @@
   // background-color: aquamarine;
   gap: 5rem;
   font-size: 1.5rem;
-    font-weight: 100;
-  
+  font-weight: 100;
 }
 
 .map-tab-container {
-    height: auto;
-    width: auto;
-    padding: 0.5rem 1.5rem;
-    // background-color: rgb(124, 57, 57);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    &.active {
-        background-color: var(--button-bg);
-        color: #fff;
-        border-radius: 5px;
-        font-weight: 200;
-      }
-    
-
-    &:hover::after {
-      width: 100%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 0px;
-      background-color: black;
-      transition: all ease 0.4s;
-      bottom: 0;
-      left: 0;
-      background-color: var(--button-bg);
-    }
+  height: auto;
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  // background-color: rgb(124, 57, 57);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &.active {
+    background-color: var(--button-bg);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 200;
   }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background-color: black;
+    transition: all ease 0.4s;
+    bottom: 0;
+    left: 0;
+    background-color: var(--button-bg);
+  }
+}
 
 #detail-address {
   margin-top: 20px;
   height: 60vh;
   width: 100%;
-//   background-color: bisque;
+    // background-color: bisque;
   display: flex;
+  padding-left: 3rem;
 
 }
 
 .detail {
   height: inherit;
-  width: 45%;
+  width: 25%;
   min-width: 300px;
   border-left: 1px solid transparent;
-    border-image: linear-gradient(to bottom, white, var(--button-bg), white) 1;
-//   background-color: rgb(233, 233, 233);
+  border-image: linear-gradient(to bottom, white, var(--button-bg), white) 1;
+  // background-color: rgb(233, 233, 233);
   padding: 2rem;
-
 
   h1 {
     font-size: 3rem;
     letter-spacing: 0.1rem;
     color: var(--button-bg);
   }
-  h2{
+  h2 {
     font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: 300;
   }
-  p{
+  p {
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
 }
 
-.map{
-    height: inherit;
-    width: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    iframe{
-        border-radius: 15px;
-    }
+.map {
+  height: inherit;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  iframe {
+    border-radius: 15px;
+  }
+}
+.sampleImage {
+  height: inherit;
+  width: auto;
+  // background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding: 8px 15px 8px 8px;
+  justify-content: center;
+}
 
+.images {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  background-color: rgb(50, 180, 195);
+}
+
+// This is for contact form
+#contact-form{
+  margin-top: 50px;
+  height: 80vh;
+  width: 100%;
+  background-color: var(--button-bg);
+  display: flex;
+  border-radius: 100px 100px 0 0 ;
+  margin-bottom: 5px;
+
+}
+
+
+.form-header{
+  height: inherit;
+  width: 50%;
+  // background-color: aquamarine;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 6rem;
+  p{
+    font-size: 7rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+  }
+}
+
+.form-container{
+  height: inherit;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b4b3b3;
+  border-left: none;
+  border-radius: 0 100px 0 0 ;
 }

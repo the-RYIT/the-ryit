@@ -1,4 +1,4 @@
-import { CourseCard } from "@/components/course/CourseCardSection/CourseCard";
+
 import { CoursePage } from "@/components/course/pageDetails/CoursePage";
 
 const page = () => {

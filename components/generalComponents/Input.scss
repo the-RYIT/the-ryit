@@ -1,0 +1,22 @@
+.InputBox {
+  height: auto;
+  width: auto;
+  // background-color: rgb(49, 86, 86);
+  label {
+    display: block;
+    font-size: 1.3rem;
+    margin: 5px 0px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  input {
+    height: 45px;
+    min-width: 250px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+  }
+}
+
+
