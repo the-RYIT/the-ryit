@@ -2,8 +2,10 @@
 
 import { ntr, manrope } from "@/utils/fonts/fonts";
 import "@/components/contact/DetailSection.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ContactForm } from "./contactComponent/ContactForm";
+import Image from "next/image";
+import dummyImage from "@/public/assets/images/course/dummy2jpg.jpg";
 
 type Tab = "chaipat" | "goura" | "bhatora";
 
@@ -13,7 +15,7 @@ const iframeSources: { [key in Tab]: string } = {
   goura:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117933.4692275951!2d87.59345079726562!3d22.52590009999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02a7e820215ab3%3A0x76c293945c54cdbb!2sGoura%20Rastriya%20Youth%20Computer!5e0!3m2!1sen!2sin!4v1720556756132!5m2!1sen!2sin",
   bhatora:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.703947470254!2d85.51129547576915!3d23.252180211899313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4f01c098f47a1%3A0x8428b9f8ec747e59!2sBhatora%20Youth%20Computer%20Training%20Centre!5e0!3m2!1sen!2sin!4v1720554473602!5m2!1sen!2sin",
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3745430.0100830705!2d85.3746349!3d23.5452137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02a18ab0ff5e17%3A0xff4d8d26e2950809!2sBHATORA%20RASTRIYA%20YOUTH%20COMPUTER%20TRAINING%20ACADEMY!5e0!3m2!1sen!2sin!4v1721730426217!5m2!1sen!2sin",
 };
 
 const contactDetails: {
@@ -36,85 +38,101 @@ const contactDetails: {
   },
 };
 
-// create forms data type
-
 export const DetailSection = () => {
   const [selectedTab, setSelectedTab] = useState<Tab>("chaipat");
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [dummyImage, dummyImage, dummyImage, dummyImage];
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <>
-      <div className="wrapper">
-        <div id="header">
-          <h1 className={`${ntr.className}`}>Contact Us</h1>
+    <div className="wrapper">
+      <div id="header">
+        <h1 className={ntr.className}>Contact Us</h1>
+      </div>
+      <div id="about">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ea
+          vero suscipit obcaecati numquam ad blanditiis quis, deserunt
+        </p>
+      </div>
+      <div id="map-tab" className={ntr.className}>
+        <div
+          className={`map-tab-container ${selectedTab === "chaipat" ? "active" : ""}`}
+          onClick={() => setSelectedTab("chaipat")}
+        >
+          <p>CHAIPAT</p>
         </div>
-        <div id="about">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-            ea vero suscipit obcaecati numquam ad blanditiis quis, deserunt
-          </p>
+        <div
+          className={`map-tab-container ${selectedTab === "goura" ? "active" : ""}`}
+          onClick={() => setSelectedTab("goura")}
+        >
+          <p>GOURA</p>
         </div>
-        <div id="map-tab" className={`${ntr.className}`}>
-          <div
-            className={`map-tab-container ${
-              selectedTab === "chaipat" ? "active" : ""
-            }`}
-            onClick={() => setSelectedTab("chaipat")}
-          >
-            <p>CHAIPAT RYCTA</p>
-          </div>
-          <div
-            className={`map-tab-container ${
-              selectedTab === "goura" ? "active" : ""
-            }`}
-            onClick={() => setSelectedTab("goura")}
-          >
-            <p>GOURA RYCTA</p>
-          </div>
-          <div
-            className={`map-tab-container ${
-              selectedTab === "bhatora" ? "active" : ""
-            }`}
-            onClick={() => setSelectedTab("bhatora")}
-          >
-            <p>BHATORA RYCTA</p>
-          </div>
-        </div>
-        <div id="detail-address" className={`${ntr.className}`}>
-          <div className="map">
-            <iframe
-              src={iframeSources[selectedTab]}
-              width="600"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div className="sampleImage">
-            <div className="images"></div>
-            <div className="images"></div>
-            <div className="images"></div>
-          </div>
-          <div className="detail">
-            <h1 className={`${ntr.className}`}>Details</h1>
-            <h2>Address</h2>
-            <p>{contactDetails[selectedTab].address}</p>
-            <h2>Email</h2>
-            <p>{contactDetails[selectedTab].email}</p>
-            <h2>Phone</h2>
-            <p>{contactDetails[selectedTab].phone}</p>
-          </div>
-        </div>
-        <div id="contact-form">
-          <div className="form-header">
-            <p>Share Your Thoughts</p>
-          </div>
-          <div className="form-container">
-            <ContactForm />
-          </div>
+        <div
+          className={`map-tab-container ${selectedTab === "bhatora" ? "active" : ""}`}
+          onClick={() => setSelectedTab("bhatora")}
+        >
+          <p>BHATORA</p>
         </div>
       </div>
-    </>
+      <div id="detail-address" className={ntr.className}>
+        <div className="map">
+          <iframe
+            src={iframeSources[selectedTab]}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div className="detail">
+          <h1 className={ntr.className}>Details</h1>
+          <h2>Address</h2>
+          <p>{contactDetails[selectedTab].address}</p>
+          <h2>Email</h2>
+          <p>{contactDetails[selectedTab].email}</p>
+          <h2>Phone</h2>
+          <p>{contactDetails[selectedTab].phone}</p>
+        </div>
+
+        <div className="slider">
+          <div className="slides" style={{ transform: `translateX(${-currentSlide * 100}%)` }}>
+            {slides.map((slide, index) => (
+              <div className="slide" key={index}>
+                <Image
+                  src={slide}
+                  alt={`Slide ${index + 1}`}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        
+      </div>
+      <div id="contact-form">
+        <div className="form-header">
+          <p>Share Your Thoughts</p>
+        </div>
+        <div className="form-container">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
   );
 };

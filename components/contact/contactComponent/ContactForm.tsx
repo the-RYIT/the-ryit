@@ -12,6 +12,7 @@ interface FormData {
   message: string;
 }
 
+
 export const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
     FirstName: "",
@@ -21,6 +22,7 @@ export const ContactForm = () => {
     Address: "",
     message: "",
   });
+
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
