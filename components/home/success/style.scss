@@ -1,5 +1,6 @@
 .countUp-section {
     background: var(--shade-gray-color);
+    margin-top: 2rem;
 
     .section-left-part {
         h1 {
@@ -109,6 +110,7 @@
 @media screen and (max-width: 625px) {
     .countUp-section {
         padding: 0 1rem;
+        padding-top: 10px;
 
         .section-left-part {
             h1 {
