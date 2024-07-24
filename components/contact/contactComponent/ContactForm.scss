@@ -1,11 +1,12 @@
 .formDesign{
     height: auto;
-    width: auto;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     // background-color: var(--light-blue-color);
+    // background-color: red;
     padding: 1rem 4rem;
     border-radius: 16px;
 }
@@ -16,11 +17,36 @@
     height: auto;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1vw;
     input{
+        width: 100%;
         border: 1px solid #b4b3b3;
         &:focus-within{
             border: 1px solid var(--button-bg);
+        }
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 1000px){
+    .formDesign{
+        // background-color: var(--light-blue-color);
+        width: 95%;
+    }
+    .form-name{
+        flex-direction: column;
+        input{
+            width: 100%;
+        }
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 684px){
+    .formDesign{
+        // background-color: var(--light-blue-color);
+        width: 95%;
+    }
+    .form-name{
+        flex-direction: column;
+        input{
+            width: 100%;
         }
     }
 }
