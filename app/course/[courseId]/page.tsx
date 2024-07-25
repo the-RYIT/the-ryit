@@ -35,8 +35,36 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
                 nemo quae? Eius, sit.
               </p>
             </div>
-            <h2>Course lessons</h2>
-            <div className="course-lessons">
+            <h2>Opportunities</h2>
+            <div className="course-opportunities">
+              <ul className="ul">
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Ab quod vitae labore eaque!</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Ab quod vitae labore eaque!</li>
+              </ul>
+            </div>
+           
+           
+            <h2>Who is this course for?</h2>
+            <div className="course-eligibily">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quam aspernatur
+                at tempore asperiores commodi esse! Animi inventore veritatis nulla impedit
+                necessitatibus, tempora iure ad! Nihil expedita obcaecati iure et?
+              </p>
+            </div>
+            <h2>Extra Facilities</h2>
+            <div className="course-extra-facilities">
+              <ul className="ul">
+                <li> Ab quod vitae labore eaque! Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eveniet?</li>
+              </ul>
+            </div>
+          </div>
+          <div className="course-enroll flex flex-col justify-center">
+          <h2>Course lessons</h2>
+          <div className="course-lessons">
               <ul className="ul">
                 <li> Lorem ipsum dolor sit amet.</li>
                 <li> Ab quod vitae labore eaque!</li>
@@ -58,32 +86,7 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
                 <li> Deleniti eum est debitis voluptatem.</li>
               </ul>
             </div>
-            <h2>Who is this course for?</h2>
-            <div className="course-eligibily">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quam aspernatur
-                at tempore asperiores commodi esse! Animi inventore veritatis nulla impedit
-                necessitatibus, tempora iure ad! Nihil expedita obcaecati iure et?
-              </p>
-            </div>
-          </div>
-          <div className="course-enroll flex flex-col justify-center">
-            <h2>Opportunities</h2>
-            <div className="course-opportunities">
-              <ul className="ul">
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Ab quod vitae labore eaque!</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Ab quod vitae labore eaque!</li>
-              </ul>
-            </div>
-            <h2>Extra Facilities</h2>
-            <div className="course-extra-facilities">
-              <ul className="ul">
-                <li> Ab quod vitae labore eaque! Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eveniet?</li>
-              </ul>
-            </div>
+            
             <div className="apply-course">
               <button>Apply Now</button>
             </div>
