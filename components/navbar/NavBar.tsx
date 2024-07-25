@@ -19,7 +19,7 @@ const NavBar = () => {
           </li>
           |
           <li>
-            <Link href="/carrier">Carrier</Link>
+            <Link href="/career">Career</Link>
           </li>
           |
           <li>

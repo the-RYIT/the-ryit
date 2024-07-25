@@ -35,7 +35,7 @@ const MobileNav = () => {
           </li>
           <span className="horizontal-border"></span>
           <li onClick={() => setOpenOption(!isMobileNavOpen)}>
-            <Link href="/carrier">Carrier</Link>
+            <Link href="/career">Career</Link>
           </li>
           <span className="horizontal-border"></span>
           <li onClick={() => setOpenOption(!isMobileNavOpen)}>
