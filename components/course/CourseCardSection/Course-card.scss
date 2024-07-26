@@ -8,6 +8,7 @@
     // background: var(--shade-gray-color);
     transition: all ease 0.2s;
     overflow: hidden;
+    z-index: 99;
 
     &:hover {
         border-color: var(--button-bg);

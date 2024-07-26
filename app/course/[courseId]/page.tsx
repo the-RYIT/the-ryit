@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { ntr } from "@/utils/fonts/fonts";
 import "@/components/course/CourseCardSection/courseDetails.scss";
-import dummyImage from "@/public/assets/images/course/dummy2jpg.jpg";
+import python from "@/public/assets/images/course/python.jpg";
 
 const CourseDetails = ({ params }: { params: { courseId: string } }) => {
   return (
@@ -11,54 +11,45 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
         <div id="CourseImageHeader">
           <div className="course-Image flex items-center justify-end p-4">
             <div className="img-div">
-              <Image src={dummyImage} alt="course-Image" />
+              <Image src={python} alt="course-Image" />
             </div>
           </div>
           <div className={`${ntr.className} course-header`}>
             <h1>Python Course {params.courseId}</h1>
-            <h2>Intermidiate</h2>
+            <h2>Intermediate</h2>
           </div>
         </div>
+        <div className="effects1"></div>
+        <div className="effects2"></div>
         <div className="course-description-enroll">
           <div className="course-description flex flex-col">
             <h1 className={`${ntr.className}`}>About this Course</h1>
             <div className="about-course">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio, tenetur
-                odit eveniet earum delectus facilis suscipit illum autem laborum veniam ad, hic
-                consequatur nihil vel quam aperiam esse maxime assumenda odio? Ipsam fugit saepe ad.
-                Explicabo eos ad ab quod quo, non magnam, a aut, error maiores reprehenderit aperiam
-                consequatur quis. Cupiditate, fuga ipsam nemo, incidunt a ad natus officiis, unde
-                voluptas debitis facilis porro dolorem nesciunt atque aperiam corrupti rerum est
-                maxime minus optio. Veritatis similique culpa, quod id beatae maxime fuga neque a
-                perferendis iusto, recusandae possimus nostrum sunt repellendus sed illo, labore
-                nemo quae? Eius, sit.
+                This introductory Python course is designed for beginners who want to learn the fundamentals of programming. It covers basic concepts, syntax, and data structures, providing a strong foundation for further learning. Students will gain hands-on experience through practical exercises and projects, enabling them to apply their skills in real-world scenarios.
               </p>
             </div>
             <h2>Opportunities</h2>
             <div className="course-opportunities">
               <ul className="ul">
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Ab quod vitae labore eaque!</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Ab quod vitae labore eaque!</li>
+                <li> Python is in high demand across various industries, including web development, data science, and automation.</li>
+                <li> Mastering Python can open doors to advanced roles such as data analyst, machine learning engineer, and software developer.</li>
+                <li> With Python skills, students can take on freelance projects, offering flexibility and diverse work opportunities.</li>
               </ul>
             </div>
-           
            
             <h2>Who is this course for?</h2>
             <div className="course-eligibily">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quam aspernatur
-                at tempore asperiores commodi esse! Animi inventore veritatis nulla impedit
-                necessitatibus, tempora iure ad! Nihil expedita obcaecati iure et?
+                This course is suitable for beginners with no prior programming experience, individuals looking to switch careers into tech, and students who want to add programming skills to their resume.
               </p>
             </div>
             <h2>Extra Facilities</h2>
             <div className="course-extra-facilities">
               <ul className="ul">
-                <li> Ab quod vitae labore eaque! Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eveniet?</li>
+                <li> Access to experienced mentors for guidance and support.</li>
+                <li> Join a community of learners for collaboration and networking.</li>
+                <li> Additional learning materials and resources provided.</li>
               </ul>
             </div>
           </div>
@@ -66,24 +57,17 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
           <h2>Course lessons</h2>
           <div className="course-lessons">
               <ul className="ul">
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Ab quod vitae labore eaque!</li>
-                <li> At excepturi illo dolorum nemo?</li>
-                <li> Adipisci aut veritatis dicta autem?</li>
-                <li> Ab illum dolores autem reiciendis.</li>
-                <li> Quam officia ex ipsa saepe!</li>
-                <li> Quas dolore mollitia commodi laborum.</li>
-                <li> Nihil porro suscipit voluptate atque.</li>
-                <li> Nostrum ratione assumenda quis minima.</li>
-                <li> Deleniti eum est debitis voluptatem.</li>
-                <li> Quas dolore mollitia commodi laborum.</li>
-                <li> Nihil porro suscipit voluptate atque.</li>
-                <li> Nostrum ratione assumenda quis minima.</li>
-                <li> Deleniti eum est debitis voluptatem.</li>
-                <li> Quas dolore mollitia commodi laborum.</li>
-                <li> Nihil porro suscipit voluptate atque.</li>
-                <li> Nostrum ratione assumenda quis minima.</li>
-                <li> Deleniti eum est debitis voluptatem.</li>
+                <li> Introduction to Python</li>
+                <li> Variables and Data Types</li>
+                <li> Conditional Statements</li>
+                <li> Loops</li>
+                <li> Functions</li>
+                <li> Lists and Dictionaries</li>
+                <li> File Handling</li>
+                <li> Error and Exception Handling</li>
+                <li> Modules and Packages</li>
+                <li> Introduction to Object-Oriented Programming</li>
+                <li> Working with Libraries</li>
               </ul>
             </div>
             

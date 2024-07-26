@@ -55,30 +55,45 @@ export const DetailSection = () => {
 
   return (
     <div className="wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="contact-svg">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style={{ stopColor: '#0099ff', stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: '#ffffff', stopOpacity: 1 }} />
+      </linearGradient>
+    </defs>
+    <path
+      fill="url(#gradient)"
+      d="M0,224L60,208C120,192,240,160,360,154.7C480,149,600,171,720,181.3C840,192,960,192,1080,181.3C1200,171,1320,149,1380,138.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+    />
+  </svg>
       <div id="header">
-        <h1 className={ntr.className}>Contact Us</h1>
+        <h1 className={ntr.className}>CONTACT US</h1>
       </div>
       <div id="about">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ea
-          vero suscipit obcaecati numquam ad blanditiis quis, deserunt
-        </p>
+        <p>We&apos;re Here to Help, Get in Touch!</p>
       </div>
       <div id="map-tab" className={ntr.className}>
         <div
-          className={`map-tab-container ${selectedTab === "chaipat" ? "active" : ""}`}
+          className={`map-tab-container ${
+            selectedTab === "chaipat" ? "active" : ""
+          }`}
           onClick={() => setSelectedTab("chaipat")}
         >
           <p>CHAIPAT</p>
         </div>
         <div
-          className={`map-tab-container ${selectedTab === "goura" ? "active" : ""}`}
+          className={`map-tab-container ${
+            selectedTab === "goura" ? "active" : ""
+          }`}
           onClick={() => setSelectedTab("goura")}
         >
           <p>GOURA</p>
         </div>
         <div
-          className={`map-tab-container ${selectedTab === "bhatora" ? "active" : ""}`}
+          className={`map-tab-container ${
+            selectedTab === "bhatora" ? "active" : ""
+          }`}
           onClick={() => setSelectedTab("bhatora")}
         >
           <p>BHATORA</p>
@@ -107,7 +122,10 @@ export const DetailSection = () => {
         </div>
 
         <div className="slider">
-          <div className="slides" style={{ transform: `translateX(${-currentSlide * 100}%)` }}>
+          <div
+            className="slides"
+            style={{ transform: `translateX(${-currentSlide * 100}%)` }}
+          >
             {slides.map((slide, index) => (
               <div className="slide" key={index}>
                 <Image
@@ -122,8 +140,6 @@ export const DetailSection = () => {
             ))}
           </div>
         </div>
-
-        
       </div>
       <div id="contact-form">
         <div className="form-header">
