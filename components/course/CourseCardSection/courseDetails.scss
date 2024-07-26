@@ -34,7 +34,9 @@
 .img-div img {
     height: 100%; 
     width: 100%;
+    object-fit: cover;
     border-radius: inherit;
+    aspect-ratio: 3/4;
     transition: all ease 0.2s;
 
     &:hover {
@@ -85,22 +87,22 @@
 }
 
 .effects1{
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     position: absolute;
-    top:10vw;
-    right: -10%;
+    top:8vw;
+    right: -5%;
     background-color: var(--button-bg);
     filter: blur(400px);
 }
 .effects2{
-    height: 13vw;
-    width: 13vw;
+    height: 10vw;
+    width: 10vw;
     position: absolute;
-    top:0;
-    left: -8%;
-    background-color: var(--button-bg);
-    filter: blur(350px);
+    top:10vw;
+    right: -5%;
+    background-color: #5590fd;
+    filter: blur(400px);
 }
 
 .course-description-enroll{
