@@ -19,6 +19,7 @@ const CourseDetails = ({ params }: { params: { courseId: string } }) => {
             <h2>Intermidiate</h2>
           </div>
         </div>
+        <div className="effects1"></div>
         <div className="course-description-enroll">
           <div className="course-description flex flex-col">
             <h1 className={`${ntr.className}`}>About this Course</h1>
