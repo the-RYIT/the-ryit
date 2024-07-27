@@ -3,6 +3,7 @@
     // position: relative;
     overflow: hidden;
     height: auto;
+    background-color: var(--shade-gray-color);
 
 }
 
@@ -108,8 +109,8 @@
 .course-description-enroll{
     height: auto;
     width: 100%;
-    background-color: var(--shade-gray-color);
     display: flex;
+    background-color: #fff;
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 4vw 4vw 0 0;

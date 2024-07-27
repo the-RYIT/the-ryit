@@ -7,7 +7,7 @@ import { ntr, manrope } from "@/utils/fonts/fonts";
 export const CoursePage = () => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="course-svg">
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style={{ stopColor: '#0099ff', stopOpacity: 1 }} />

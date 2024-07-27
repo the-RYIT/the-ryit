@@ -70,7 +70,7 @@ export const DetailSection = () => {
       <div id="header">
         <h1 className={ntr.className}>CONTACT US</h1>
       </div>
-      <div id="about">
+      <div id="Contact-about">
         <p>We&apos;re Here to Help, Get in Touch!</p>
       </div>
       <div id="map-tab" className={ntr.className}>
