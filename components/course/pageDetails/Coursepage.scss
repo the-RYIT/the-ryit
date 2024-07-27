@@ -12,15 +12,15 @@
  
 }
 
-svg{
+.course-svg{
     position: absolute;
     left: 0;
-    top: 5rem;
+    top: 0;
     // top: -2rem;
 }
 
 @media screen and (orientation: portrait) and (max-width: 684px){
-    svg{
+    .course-svg{
         display: none;
 
     }
