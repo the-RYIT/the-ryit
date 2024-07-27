@@ -27,30 +27,30 @@ const AboutSection = () => {
             Here&apos;s What You Get
             <span></span>
           </h1>
-          <p>
+          <h4>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, corrupti! Lorem ipsum
-          </p>
+          </h4>
         </div>
 
         <div className="div about-factor">
           <h1 className={`${ntr.className} about-details-head`}>
             Our Competitive Edge <span></span>
           </h1>
-          <p>
+          <h4>
             <span>&#45; </span> Live Project Based Training
-          </p>
-          <p>
+          </h4>
+          <h4>
             <span>&#45; </span> Authorized Certification
-          </p>
-          <p>
+          </h4>
+          <h4>
             <span>&#45; </span> Authorized Certification
-          </p>
-          <p>
+          </h4>
+          <h4>
             <span>&#45; </span> Affordable Pricing
-          </p>
-          <p>
+          </h4>
+          <h4>
             <span>&#45; </span> Free wi-fi Facilities
-          </p>
+          </h4>
         </div>
 
         <div className="div sm:mt-10 mt-4">
