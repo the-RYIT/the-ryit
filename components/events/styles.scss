@@ -74,6 +74,20 @@
 }
 
 
+.top-event-section-right-part {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    .event-blank-text {
+        font-weight: bold;
+        // text-shadow: 2px 1px 4px #9786eb85;
+        text-shadow: 2px 1px 4px #b8a9ff49;
+        color: white;
+    }
+}
+
+
 @media (max-width: 640px) {
     .event-card-item {
         width: 40%;
@@ -114,6 +128,36 @@
             }
         }
     }
+
+    .top-event-section-right-part {
+        .event-card-item {
+            &:hover {
+                .event-details {
+                    bottom: 5%;
+
+                }
+            }
+
+
+
+
+            .event-details {
+                bottom: -20%;
+
+                .event-title {
+                    font-size: 2rem;
+
+                }
+
+
+                .event-btn {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -137,6 +181,39 @@
             }
         }
     }
+
+    .top-event-section-right-part {
+
+
+        .event-card-item {
+
+            // width: 60%;
+            // aspect-ratio: 5/3;
+            // max-width: 65%;
+
+            &:hover {
+                .event-details {
+                    bottom: 5%;
+
+                }
+            }
+
+            .event-details {
+                bottom: -25%;
+
+
+                .sub-details {
+                    font-size: 12px;
+                }
+
+                .event-title {
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+
+    }
 }
 
 
@@ -156,12 +233,17 @@
 
 @media screen and (width<=480px) {
 
+    .event-card-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .event-card-item .event-details .event-title {
-        font-size: 1.2rem;
+        font-size: 2.8rem;
     }
 
     .event-card-item .event-details {
-        bottom: -35%;
+        bottom: -15%;
     }
 
     .event-card-item .event-details .event-btn {
@@ -174,19 +256,37 @@
         }
     }
 
-}
+
+    .top-event-section-right-part {
 
 
-@media screen and (max-width: 400px) {
-    .event-card-item {
-        width: 100%;
+        .event-card-item {
 
-        .event-details {
-            bottom: -18%;
 
-            .event-title {
-                font-size: 2rem;
+            &:hover {
+                .event-details {
+                    bottom: 5%;
+
+                }
             }
+
+            .event-details {
+                bottom: -15%;
+
+
+                .sub-details {
+                    font-size: 16px;
+                }
+
+                .event-title {
+                    font-size: 3rem;
+                }
+
+                .event-btn {
+                    margin-top: 2rem;
+                }
+            }
+
         }
 
     }
