@@ -6,7 +6,7 @@ import "./globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "RYATM - Start Journey",
+  title: "The RYIT",
   description: "Transforming yourself through technology",
 };
 

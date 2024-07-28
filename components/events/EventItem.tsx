@@ -7,7 +7,7 @@ import { eventImageArray, eventNameArray } from "@/utils/assets";
 const EventItem = ({ id }: { id: number }) => {
   return (
     <div className="event-card-item relative">
-      <Image src={eventImageArray[id]} alt="Event Image" />
+      <Image src={eventImageArray[id]} alt="Event Image" placeholder="blur" />
       <div className="event-details">
         <div className="sub-details">
           <h5>

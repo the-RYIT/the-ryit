@@ -15,6 +15,10 @@ const NavBar = () => {
           </li>
           |
           <li>
+            <Link href="/blogs">Blogs</Link>
+          </li>
+          |
+          <li>
             <Link href="/course">Courses</Link>
           </li>
           |
