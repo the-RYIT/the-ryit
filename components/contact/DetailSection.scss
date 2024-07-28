@@ -231,7 +231,7 @@
   #header h1{
     font-size: 4rem;
   }
-  #about{
+  #Contact-about{
     p{
       font-size: 1rem;
     }
@@ -276,9 +276,10 @@
   #header h1{
     font-size: 4rem;
   }
-  #about{
+  #Contact-about{
     p{
       font-size: 1rem;
+      text-align: center;
     }
   }
   #map-tab{
@@ -321,7 +322,7 @@
   }
 
   .contact-svg{
-    display: noen;
+    display: none;
   }
   
 }
