@@ -18,7 +18,7 @@ const ContactSection = () => {
             <div>
               <h3>
                 Have questions or need more information? Our team is here to help! Reach out via the
-                form below or contact us directly, and we'll get back to you promptly
+                form below or contact us directly, and we&apos;ll get back to you promptly
               </h3>
 
               <LinkBtn link="/contacts" title="Learn More" extraClass="contact-link-btn" />
