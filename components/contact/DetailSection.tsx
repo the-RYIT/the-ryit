@@ -22,19 +22,19 @@ const contactDetails: {
   [key in Tab]: { address: string; email: string; phone: string };
 } = {
   chaipat: {
-    address: "Chaipat,near beldanga ,721148",
-    email: "chaipat@contact.com",
-    phone: "+911234567890",
+    address: "Chaipat Beldanga     Chaipat,Daspur,Paschim Medinipur 721178",
+    email: "theryit2024@gmail.com",
+    phone: "+919679103253",
   },
   goura: {
-    address: "456 Goura Rd.",
-    email: "goura@contact.com",
-    phone: "+911234567891",
+    address: "Uttar Gobindanagar   Goura,Daspur,Paschim Medinipur 721146",
+    email: "theryit2024@gmail.com",
+    phone: "+919679103253",
   },
   bhatora: {
-    address: "789 Bhatora Ln.",
-    email: "bhatora@contact.com",
-    phone: "+911234567892",
+    address: "Bhatora Shibtola Bazar    Bhatora,Joypur,Howrah, 711303",
+    email: "theryit2024@gmail.com",
+    phone: "+919679103253",
   },
 };
 

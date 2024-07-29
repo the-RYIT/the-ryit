@@ -6,8 +6,8 @@ import "./globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The RYIT",
-  description: "Transforming yourself through technology",
+  title: "RYIT - Start Journey",
+  description: "Where technology meets innovation and excellence",
 };
 
 export default function RootLayout({

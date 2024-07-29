@@ -1,12 +1,14 @@
 import Link from "next/link";
 import "./nav-style.scss";
 import MobileNav from "./MobileNav";
+import Image from "next/image";
+import logo from '../../public/assets/images/home/herosection/logo.png'
 
 const NavBar = () => {
   return (
     <header className="nav-header">
       <div className="logo">
-        <span>RYATM</span>
+        <Image src={logo} alt="RYIT" loading="lazy" height={512} width={512}></Image>
       </div>
       <nav className="hidden md:flex ">
         <ul>
