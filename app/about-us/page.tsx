@@ -19,9 +19,6 @@ const page = () => {
       </svg>
       <div className="header-section">
         <h1 className={`${ntr.className} text-center max-sm:leading-none `}>About Us</h1>
-        <p className="font-sans font-thin text-[1.15rem] flex justify-center items-center relative tracking-[0.25rem]">
-          Come to Know us
-        </p>
       </div>
       <AboutDetails />
     </main>

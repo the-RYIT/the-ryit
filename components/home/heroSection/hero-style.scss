@@ -2,7 +2,7 @@ section.heroSection {
     padding-top: calc(var(--nav-height) + 1rem);
     background: var(--shade-gray-color);
     height: 100vh;
-
+    margin-top: var(--float-promo-height);
 
     aside.text-side {
         h1 {

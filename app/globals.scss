@@ -9,6 +9,7 @@
   --button-bg: #2866DE;
   --light-blue-color: #D9E6FF;
   --nav-height: 5rem;
+  --float-promo-height: 3.2rem;
   --nav-bottom-border: 90deg,
     #0000000d 3%,
     #0000002e 48%,
@@ -61,7 +62,7 @@ body {
 }
 
 main.mainSection {
-  padding: calc(var(--nav-height) + 1rem) 4rem 0 4rem;
+  padding: calc(var(--nav-height) + 3rem + var(--float-promo-height)) 4rem 0 4rem;
 
 }
 
@@ -79,6 +80,26 @@ section {
   z-index: -1;
 }
 
+.contact-upper-promo {
+  width: 100%;
+  height: var(--float-promo-height);
+  top: calc(var(--nav-height) + 15px);
+  background: rgb(178, 204, 255);
+  background: linear-gradient(27deg, rgba(40, 102, 222, 1) 11%, rgba(209, 219, 240, 1) 40%, rgba(204, 220, 238, 1) 64%, rgba(40, 102, 222, 1) 92%);
+  color: black;
+  z-index: 3;
+
+  h3 {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+
+    svg {
+      width: 1.2rem;
+    }
+  }
+}
+
 
 @media screen and (max-width:768px) {
   section {
@@ -93,6 +114,15 @@ section {
 }
 
 @media screen and (width <=480px) {
+  main.mainSection {
+    padding: calc(var(--nav-height) + var(--float-promo-height) + 1rem) 1rem 0 1rem;
+  }
+
+  .contact-upper-promo {
+
+    top: calc(var(--nav-height) + 0px);
+  }
+
   .main-page-withWave {
     overflow-x: hidden;
 

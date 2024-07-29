@@ -5,12 +5,16 @@ import Image from "next/image";
 import arrow from "@/public/assets/icons/down-arrow-icon.svg";
 import { manrope } from "@/utils/fonts/fonts";
 
-const FAQ = () => {
+interface FAQProps {
+  question: string;
+  answer: string;
+}
+
+const FAQ = ({ answer, question }: FAQProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   const toggleAccordion = () => {
-    console.log("clicked");
     setIsOpen(!isOpen);
   };
 
@@ -23,7 +27,7 @@ const FAQ = () => {
           }`}
           onClick={toggleAccordion}
         >
-          <h2>Can I go for practice ?</h2>
+          <h2>{question}</h2>
           <span></span>
           <Image src={arrow} alt="Arrow" />
         </div>
@@ -37,10 +41,7 @@ const FAQ = () => {
             borderColor: isOpen ? "var(--button-bg)" : "transparent",
           }}
         >
-          <p className={manrope.className}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium aperiam vero modi
-            accusantium pariatur corrupti officia maiores at delectus sequi!
-          </p>
+          <p className={manrope.className}>{answer}</p>
         </div>
       </div>
     </div>

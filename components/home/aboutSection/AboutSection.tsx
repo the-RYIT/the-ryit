@@ -15,10 +15,10 @@ const AboutSection = () => {
       </div>
       <div className={`right-about-part ${manrope.className}`}>
         <h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora in a nostrum voluptate
-          nemo expedita ratione eveniet asperiores veritatis eligendi. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Nostrum dolore obcaecati minus repellendus corporis fugit
-          rerum eveniet vero veritatis aut.
+          RYIT is a top educational brand in India, offering advanced courses in Computer Science,
+          Robotics, Artificial Intelligence, Astronomy, and English Language. By integrating AI into
+          its teaching methods, RYIT revolutionizes skill development, equipping individuals to
+          thrive in the dynamic digital landscape.
         </h3>
 
         <div className="div">
@@ -28,7 +28,7 @@ const AboutSection = () => {
             <span></span>
           </h1>
           <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, corrupti! Lorem ipsum
+            Best in class training with a focus on practical learning and real-world applications
           </h4>
         </div>
 
@@ -54,7 +54,7 @@ const AboutSection = () => {
         </div>
 
         <div className="div sm:mt-10 mt-4">
-          <LinkBtn link="/contacts" title="Learn More" extraClass="about-link-btn" />
+          <LinkBtn link="/about-us" title="Learn More" extraClass="about-link-btn" />
         </div>
       </div>
     </section>

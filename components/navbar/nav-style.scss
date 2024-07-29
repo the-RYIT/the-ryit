@@ -1,13 +1,14 @@
 header.nav-header {
   position: fixed;
   width: 100%;
-  padding: 0.5rem 5rem;
+  padding: 3rem 5rem;
   height: var(--nav-height);
   backdrop-filter: blur(7px);
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
 
   .logo {
     display: flex;
@@ -15,7 +16,7 @@ header.nav-header {
 
     img {
       width: 4rem;
-      scale: 1.2;
+      scale: 1.5;
       translate: 15px;
       /* width: 100%; */
     }
@@ -142,5 +143,9 @@ nav {
 @media screen and (max-width:768px) {
   header.nav-header {
     padding: 0.5rem 2rem;
+
+    .logo img {
+      scale: 1.14;
+    }
   }
 }
