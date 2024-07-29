@@ -34,7 +34,7 @@
 
         .countUp {
             display: flex;
-            gap: 1rem;
+            // gap: 1rem;
             font-size: 6.7rem;
             align-items: flex-end;
             position: relative;
@@ -52,7 +52,7 @@
                 width: 105%;
             }
 
-            span {
+            >span {
                 position: absolute;
                 transition: width 0.3s ease-in-out;
                 bottom: 0px;
@@ -76,6 +76,7 @@
                 line-height: 1;
                 font-weight: 600;
                 color: var(--black-gray-color);
+                text-align: end;
             }
 
             h4 {
@@ -109,8 +110,8 @@
 
 @media screen and (max-width: 625px) {
     .countUp-section {
-        padding: 0 1rem;
-        padding-top: 10px;
+        padding: 2rem 1.5rem;
+
 
         .section-left-part {
             h1 {
@@ -129,7 +130,7 @@
         .section-right-part {
             .countUp {
                 width: 100%;
-                font-size: 4rem;
+                font-size: 3.8rem;
                 padding-bottom: 1rem;
 
 

@@ -17,9 +17,8 @@ const ContactSection = () => {
           <aside className="contact-left-part w-2/5 pr-4  flex flex-col justify-between ">
             <div>
               <h3>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt suscipit officia
-                sequi. Dolorem excepturi ipsa in velit veniam repellat id perferendis itaque ipsum
-                fuga! Officiis maxime quidem incidunt asperiores facere?
+                Have questions or need more information? Our team is here to help! Reach out via the
+                form below or contact us directly, and we'll get back to you promptly
               </h3>
 
               <LinkBtn link="/contacts" title="Learn More" extraClass="contact-link-btn" />
@@ -28,10 +27,10 @@ const ContactSection = () => {
             <div className="flex flex-col gap-8">
               <div className="contact-details flex flex-col gap-3">
                 <h1>
-                  <Image src={wpImg} alt="*" /> <span>: +91 7400093423</span>
+                  <Image src={wpImg} alt="*" /> <span>: +91 9679103253</span>
                 </h1>
                 <h1>
-                  <Image src={mailImg} alt="*" /> <span>: YourHome@gamil.com</span>
+                  <Image src={mailImg} alt="*" /> <span>: theryit2024@gamil.com</span>
                 </h1>
               </div>
               <div className="social-link">
