@@ -55,11 +55,21 @@ export const DetailSection = () => {
 
   return (
     <div className="wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="contact-svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        className="contact-svg"
+      >
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{ stopColor: "#0099ff", stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
+            <stop
+              offset="0%"
+              style={{ stopColor: "#0099ff", stopOpacity: 1 }}
+            />
+            <stop
+              offset="100%"
+              style={{ stopColor: "#ffffff", stopOpacity: 1 }}
+            />
           </linearGradient>
         </defs>
         <path
@@ -72,6 +82,16 @@ export const DetailSection = () => {
       </div>
       <div id="Contact-about">
         <p>We&apos;re Here to Help, Get in Touch!</p>
+      </div>
+      <div
+        id="Contact-Branch-header"
+        className={`${ntr.className} flex justify-center items-center`}
+      >
+        <div className="border-conatainer flex justify-center items-center">
+          <p>
+            Our <span>Branches</span>
+          </p>
+        </div>
       </div>
       <div id="map-tab" className={ntr.className}>
         <div
@@ -116,7 +136,10 @@ export const DetailSection = () => {
         </div>
 
         <div className="slider">
-          <div className="slides" style={{ transform: `translateX(${-currentSlide * 100}%)` }}>
+          <div
+            className="slides"
+            style={{ transform: `translateX(${-currentSlide * 100}%)` }}
+          >
             {slides.map((slide, index) => (
               <div className="slide" key={index}>
                 <Image
