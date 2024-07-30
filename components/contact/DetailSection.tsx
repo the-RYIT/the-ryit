@@ -73,6 +73,9 @@ export const DetailSection = () => {
       <div id="Contact-about">
         <p>We&apos;re Here to Help, Get in Touch!</p>
       </div>
+      <div id="Contact-Branch-header" className={`${ntr.className} flex justify-center items-center`}>
+        <p>Our <span>Branches</span></p>
+      </div>
       <div id="map-tab" className={ntr.className}>
         <div
           className={`map-tab-container ${selectedTab === "chaipat" ? "active" : ""}`}
