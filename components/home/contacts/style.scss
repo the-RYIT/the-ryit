@@ -45,19 +45,21 @@
 
         h1 {
 
-            display: flex;
-            align-items: center;
-            font-size: 1.3rem;
-            gap: .6rem;
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 1.3rem;
+                gap: .6rem;
 
-            img {
-                width: 1.6rem;
-            }
+                img {
+                    width: 1.6rem;
+                }
 
-            span {
-                transition: transform .2s ease-in-out;
-                font-style: italic;
-                cursor: context-menu;
+                span {
+                    transition: transform .2s ease-in-out;
+                    font-style: italic;
+                    cursor: context-menu;
+                }
             }
 
             &:hover {

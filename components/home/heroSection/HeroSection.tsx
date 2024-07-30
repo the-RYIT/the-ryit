@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./hero-style.scss";
 import heroImage from "@/public/assets/images/home/herosection/heroImage.jpg";
-import { ntr, manrope } from "@/utils/fonts/fonts";
+import { ntr, manrope, openSans } from "@/utils/fonts/fonts";
 import LinkBtn from "@/components/LinkBtn/LinkBtn";
 
 const HeroSection = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
       <aside className="pt-8 text-side grow">
         <div className="header absolute">
           <h1 className={`${ntr.className} text-3xl`}>Transform YourSelf</h1>
-          <h1 className="ml-4">Through Technology</h1>
+          <h1 className={`${ntr.className} ml-4`}>Through Technology</h1>
         </div>
 
         <div
@@ -18,7 +18,7 @@ const HeroSection = () => {
           id="sub-hero-text"
         >
           <div className=" sm:w-[70%] w-full pr-3">
-            <p>
+            <p className={manrope.className}>
               ProfessionalTeaching on many Computer Application and programming language with good
               communication. This is your Chance for
               <span> grab the opportunity</span>.

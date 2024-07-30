@@ -5,12 +5,13 @@ import { manrope, ntr } from "@/utils/fonts/fonts";
 const AboutDetails = () => {
   return (
     <section className="about-page-details md:px-28">
-      The RYIT is one of the best educational brands in india.WE provide advanced level professional
-      courses on COMPUTER ,ROBOTICS,ARTIFICIAL INTELLIGENCE ,ASTRONOMY, ENGLISH LANGUAGE. The RYIT
+      The <strong> RYIT </strong> is one of the best educational brands in india.WE provide advanced
+      level professional courses on COMPUTER ,ROBOTICS,ARTIFICIAL INTELLIGENCE ,ASTRONOMY, ENGLISH
+      LANGUAGE. The <strong> RYIT </strong>
       revolutionised the way skills are acquired and developed in the age of Artificial
-      Intelligence. The RYIT,where the future of learning meets the power of artificial
-      intelligence. WE empower individuals with the skills they need to thrive in the fast-evolving
-      digital landscape.
+      Intelligence. The <strong> RYIT </strong>,where the future of learning meets the power of
+      artificial intelligence. WE empower individuals with the skills they need to thrive in the
+      fast-evolving digital landscape.
       <div className="mid-section flex max-sm:flex-col gap-16 mt-4">
         <Image src={aboutImage} alt="about" />
 

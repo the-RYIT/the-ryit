@@ -30,11 +30,15 @@ const FloatingPromo = () => {
         Get In Touch With
       </span>
       <h3>
-        <WpSvg /> +91 9679103253
+        <a href="https://wa.me/919679103253" target="_blank">
+          <WpSvg /> +91 9679103253
+        </a>
       </h3>
       <h3>
-        <MailSvg />
-        theryit2024@gmail.com
+        <a href="mailto:theryit2024@gmail.com" target="_blank">
+          <MailSvg />
+          theryit2024@gmail.com
+        </a>
       </h3>
     </div>
   );

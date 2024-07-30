@@ -15,10 +15,10 @@ const AboutSection = () => {
       </div>
       <div className={`right-about-part ${manrope.className}`}>
         <h3>
-          RYIT is a top educational brand in India, offering advanced courses in Computer Science,
-          Robotics, Artificial Intelligence, Astronomy, and English Language. By integrating AI into
-          its teaching methods, RYIT revolutionizes skill development, equipping individuals to
-          thrive in the dynamic digital landscape.
+          <strong> RYIT </strong> is a top educational brand in India, offering advanced courses in
+          Computer Science, Robotics, Artificial Intelligence, Astronomy, and English Language. By
+          integrating AI into its teaching methods, <strong> RYIT </strong> revolutionizes skill
+          development, equipping individuals to thrive in the dynamic digital landscape.
         </h3>
 
         <div className="div">
@@ -28,7 +28,8 @@ const AboutSection = () => {
             <span></span>
           </h1>
           <h4>
-            Best in class training with a focus on practical learning and real-world applications
+            Best in class training with Certification.A Class focus on practical learning and
+            real-world applications
           </h4>
         </div>
 

@@ -27,10 +27,14 @@ const ContactSection = () => {
             <div className="flex flex-col gap-8">
               <div className="contact-details flex flex-col gap-3">
                 <h1>
-                  <Image src={wpImg} alt="*" /> <span>: +91 9679103253</span>
+                  <a href="https://wa.me/919679103253">
+                    <Image src={wpImg} alt="*" /> <span>: +91 9679103253</span>
+                  </a>
                 </h1>
                 <h1>
-                  <Image src={mailImg} alt="*" /> <span>: theryit2024@gamil.com</span>
+                  <a href="mailto:theryit2024@gamil.com">
+                    <Image src={mailImg} alt="*" /> <span>: theryit2024@gamil.com</span>
+                  </a>
                 </h1>
               </div>
               <div className="social-link">
@@ -75,10 +79,15 @@ const ContactSection = () => {
             </div>
           </aside>
 
-          <aside className="contact-right part grow flex flex-col sm:justify-end  justify-start items-end">
-            <h1>Join</h1>
-            <h1>Us</h1>
-            <h1>Today</h1>
+          <aside className="contact-right part grow ">
+            <Link
+              href="/contacts"
+              className="flex flex-col sm:justify-end  justify-start items-end"
+            >
+              <h1>Join</h1>
+              <h1>Us</h1>
+              <h1>Today</h1>
+            </Link>
           </aside>
         </div>
       </section>

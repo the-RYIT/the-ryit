@@ -62,7 +62,7 @@ const FAQSection = () => {
     <section className="faq-section py-8">
       <h1 className={`text-7xl mb-7 ${ntr.className}`}>FAQ - Frequent Ask Question</h1>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col items-center gap-3">
         {faqDetails.map((data, index: number) => (
           <FAQ key={index} question={data.question} answer={data.answer} />
         ))}
