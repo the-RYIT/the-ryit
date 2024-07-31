@@ -1,0 +1,51 @@
+#career-header{
+    height: 10vh;
+    // background-color: rgb(81, 161, 161);
+    position: relative;
+    width: 100%;
+    top: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+        font-weight: 100;
+        span{
+            font-weight: 800;
+            font-size: 4.2rem;
+            color: var(--button-bg);
+        }
+    }
+    
+}
+
+#career-subheader{
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    // background-color: aqua;
+    top: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    p{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        font-weight: 100;
+        text-align: center;
+    }
+
+}
+
+#div-career-catagory-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // background-color: red;
+    gap: 3rem;
+    padding: 0 7rem 0 7rem;
+    flex-wrap: wrap;
+}
