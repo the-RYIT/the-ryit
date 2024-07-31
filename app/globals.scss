@@ -123,6 +123,14 @@ section {
     top: calc(var(--nav-height) + 0px);
   }
 
+  .blog-image {
+    width: 100% !important;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
   .main-page-withWave {
     overflow-x: hidden;
 

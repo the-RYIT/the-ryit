@@ -20,7 +20,7 @@ const page = () => {
         <h1
           className={`${ntr.className} text-center max-sm:leading-none uppercase md:text-[5.4rem] sm:text-[4.4rem] text-[3.3rem]`}
         >
-          Your Blogs{" "}
+          Our Blogs{" "}
         </h1>
         <p className="font-sans font-thin text-[1.15rem] text-center tracking-[0.25rem]">
           Amplifying the voices of creativity and wisdom in a world of constant change.
