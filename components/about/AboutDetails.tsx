@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import aboutImage from "@/public/assets/images/home/about/dump.webp";
+import aboutImage from "@/public/assets/images/home/about/dump.avif";
 import { manrope, ntr } from "@/utils/fonts/fonts";
 const AboutDetails = () => {
   return (
