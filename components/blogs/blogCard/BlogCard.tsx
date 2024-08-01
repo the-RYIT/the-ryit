@@ -3,7 +3,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { NBlog } from "@/utils/types";
 import Link from "next/link";
 import { clientCredential } from "@/utils/assets";
-
+import { giveDate } from "@/utils/assets";
 const BlogCard = ({ blogData }: { blogData: NBlog.InfBlog }) => {
   const { projectId, dataset } = clientCredential;
   if (!projectId || !dataset) {
@@ -29,8 +29,8 @@ const BlogCard = ({ blogData }: { blogData: NBlog.InfBlog }) => {
       </div>
       <div className="blog-card-details flex flex-col gap-4">
         <div className="blog-date-author">
-          <span className="uppercase">{blogData.publishedAt}</span> <p className="inline"> — </p>{" "}
-          {blogData.author}
+          <span className="uppercase">{giveDate(blogData.publishedAt)}</span>{" "}
+          <p className="inline"> — </p> {blogData.author}
         </div>
         <h1 className="blog-title">{blogData.title}</h1>
         <div className="blog-card-button">

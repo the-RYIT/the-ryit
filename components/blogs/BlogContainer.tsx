@@ -25,12 +25,3 @@ const BlogContainer = async () => {
 };
 
 export default BlogContainer;
-
-// export async function getServerSideProps() {
-
-//   return {
-//     props: {
-//       allBlogs,
-//     },
-//   };
-// }

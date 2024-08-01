@@ -6,6 +6,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import PortableText from "react-portable-text";
 
 import { NBlog } from "@/utils/types";
+import { manrope } from "@/utils/fonts/fonts";
 
 const page = async ({ params }: { params: { blogSlug: string } }) => {
   const { apiVersion, projectId, dataset } = clientCredential;
@@ -21,12 +22,12 @@ const page = async ({ params }: { params: { blogSlug: string } }) => {
     projectId,
     dataset,
     apiVersion,
-    useCdn: true,
+    // useCdn: true,
   });
 
   const query = `*[_type == "blog" && slug.current == '${params.blogSlug}'][0]{title, slug, author,blogContent, publishedAt, mainImage{asset->{url}}}`;
   const blog: NBlog.InfFullBlog = await client.fetch(query);
-
+  console.log(blog.blogContent);
   return (
     <main className="mainSection flex flex-col gap-4 items-center">
       <div className="blog-image relative xl:w-[760px] sm:h-[400px]">
@@ -51,7 +52,7 @@ const page = async ({ params }: { params: { blogSlug: string } }) => {
           {blog.publishedAt} <span> -- </span> {blog.author}
         </div>
 
-        <article className="Solo-blog-content max-sm:px-4 sm:mt-8">
+        <article className="Solo-blog-content max-sm:px-4 sm:mt-8" style={manrope.style}>
           <PortableText content={blog.blogContent} projectId={projectId} dataset={dataset} />
         </article>
       </div>

@@ -75,6 +75,16 @@
 }
 
 
+.all-event-section-right-part {
+    .event-blank-text {
+        font-weight: bold;
+
+        text-shadow: 2px 1px 4px #b8a9ff49;
+        color: var(--light-blue-color);
+    }
+}
+
+
 .top-event-section-right-part {
     flex: 1;
     justify-content: center;

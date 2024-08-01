@@ -8,7 +8,9 @@ const NavBar = () => {
   return (
     <header className="nav-header">
       <div className="logo">
-        <Image src={logo} alt="RYIT" loading="lazy"></Image>
+        <Link href="/">
+          <Image src={logo} alt="RYIT" loading="lazy"></Image>
+        </Link>
       </div>
       <nav className="hidden md:flex ">
         <ul>

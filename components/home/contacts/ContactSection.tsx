@@ -39,19 +39,22 @@ const ContactSection = () => {
               </div>
               <div className="social-link">
                 <div className="link-item">
-                  <a href="">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100066370544779&mibextid=ZbWKwL"
+                    target="_blank"
+                  >
                     <Image src={fbImg} alt="FaceBook" />
                   </a>
                 </div>
                 <div className="link-item">
                   {" "}
-                  <a href="">
+                  <a href="" target="_blank">
                     <Image src={instImg} alt="instagram" />
                   </a>
                 </div>
                 <div className="link-item">
                   {" "}
-                  <a href="">
+                  <a href="" target="_blank">
                     <Image src={xImg} alt="X" />
                   </a>
                 </div>

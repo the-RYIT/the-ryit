@@ -100,6 +100,43 @@ section {
   }
 }
 
+.blog-details {
+  .Solo-blog-content {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: .5rem;
+    }
+
+    figure {
+      margin: 1rem 0;
+    }
+
+
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+
+    ul,
+    ol {
+      padding-left: 2rem;
+      list-style-type: disc;
+
+      ul,
+      ol {
+        list-style: circle;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width:768px) {
   section {
