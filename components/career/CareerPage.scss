@@ -9,7 +9,7 @@
     align-items: center;
     h1{
         font-size: 4rem;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
         font-weight: 100;
         span{
             font-weight: 800;
@@ -34,6 +34,11 @@
         letter-spacing: 0.2rem;
         font-weight: 100;
         text-align: center;
+        color: #797878;
+        span{
+            font-weight: bold;
+            color:var(--button-bg)
+        }
     }
 
 }
