@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./about-style.scss";
-import img from "@/public/assets/images/home/about/dump.webp";
+import img from "@/public/assets/images/home/about/dump.avif";
 import { ntr, manrope } from "@/utils/fonts/fonts";
 import LinkBtn from "@/components/LinkBtn/LinkBtn";
 
