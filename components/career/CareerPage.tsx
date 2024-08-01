@@ -7,7 +7,7 @@ const categories = [
   {
     title: "IT",
     about: "Explore opportunities in the field of Information Technology.",
-    svg: "/assets/icons/career/IT.svg"
+    svg: "/assets/icons/career/IT.svg",
   },
   {
     title: "Finance",
@@ -26,7 +26,7 @@ const categories = [
   },
   {
     title: "Web Development",
-    about: 'Build and maintain dynamic websites and apps',
+    about: "Build and maintain dynamic websites and apps",
     svg: "/assets/icons/career/web-d.svg",
   },
   {
@@ -51,14 +51,16 @@ export const CareerPage = () => {
         </p>
       </div>
       <div id="div-career-catagory-container">
-        {categories.map((category, index) => (
-          <CatagoryContainer
-            key={index}
-            title={category.title}
-            about={category.about}
-            svg={category.svg}
-          />
-        ))}
+        <div className="career-subContainer">
+          {categories.map((category, index) => (
+            <CatagoryContainer
+              key={index}
+              title={category.title}
+              about={category.about}
+              svg={category.svg}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

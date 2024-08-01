@@ -1,11 +1,10 @@
 .cc-conatiner{
+
     height: 12rem;
     width: 19rem;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    flex-basis: calc(33.33% - 2rem);
-    max-width: 25%;
     transition: all ease 0.2s;
     &:hover{
         border: 1px solid #aeaeae;
@@ -106,6 +105,19 @@
         font-size: 1.5rem;
         letter-spacing: 0.1rem;
         font-weight: bold;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .cc-conatiner{
+        min-width: 100%;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 684px) {
+    .cc-conatiner{
+        min-width: 20rem;
+        
     }
 }
 
