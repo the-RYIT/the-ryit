@@ -23,7 +23,6 @@ const AboutSection = () => {
 
         <div className="div">
           <h1 className={`${ntr.className} about-details-head`}>
-            {/* Unveiling Your Benefits */}
             Here&apos;s What You Get
             <span></span>
           </h1>

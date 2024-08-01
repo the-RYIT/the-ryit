@@ -1,4 +1,3 @@
-import img from "@/public/assets/images/blog/blog-copy.png";
 import { clientCredential } from "@/utils/assets";
 import { createClient } from "next-sanity";
 import Image from "next/image";
@@ -22,7 +21,7 @@ const page = async ({ params }: { params: { blogSlug: string } }) => {
     projectId,
     dataset,
     apiVersion,
-    // useCdn: true,
+    useCdn: true,
   });
 
   const query = `*[_type == "blog" && slug.current == '${params.blogSlug}'][0]{title, slug, author,blogContent, publishedAt, mainImage{asset->{url}}}`;

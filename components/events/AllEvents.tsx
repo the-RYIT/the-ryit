@@ -12,7 +12,7 @@ const AllEvents = async () => {
     projectId,
     dataset,
     apiVersion,
-    useCdn: false,
+    useCdn: true,
   });
   const query = `*[_type == "event" && upcomingEvent != true]{title, slug, eventDate, eventImage{asset->{url}}}`;
   const allEvents: NEventItem.EventItemProps[] = await client.fetch(query);
