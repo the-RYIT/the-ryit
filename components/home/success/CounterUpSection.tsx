@@ -20,7 +20,7 @@ const CounterUpSection = () => {
       <div className="countUp">
         <h4 className={ntr.className}>Teachers</h4>
         <h1 className={`${manrope.className} sm:w-[16rem] w-[9rem]`}>
-          {inView && <CountUp start={0} end={100} duration={2} />}+
+          {inView && <CountUp start={0} end={25} duration={2} />}+
         </h1>
         <span></span>
       </div>
