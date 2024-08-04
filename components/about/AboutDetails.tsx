@@ -13,7 +13,13 @@ const AboutDetails = () => {
       artificial intelligence. WE empower individuals with the skills they need to thrive in the
       fast-evolving digital landscape.
       <div className="mid-section flex max-sm:flex-col gap-16 mt-4">
-        <Image src={aboutImage} alt="about" />
+        <Image
+          src={aboutImage}
+          alt="about"
+          style={{
+            width: "30%",
+          }}
+        />
 
         <aside className=" ">
           <h1 className="text-4xl" style={ntr.style}>
