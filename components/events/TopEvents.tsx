@@ -10,7 +10,7 @@ const TopEvents = async () => {
     projectId,
     dataset,
     apiVersion,
-    useCdn: true,
+    useCdn: false,
   });
   const query = `*[_type == "event" && upcomingEvent == true]{title, slug, eventDate, eventImage{asset->{url}}}`;
   const upComingEvents: NEventItem.EventItemProps[] = await client.fetch(query);
