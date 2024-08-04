@@ -6,6 +6,7 @@ import LeftOpen from '@/public/assets/icons/career/left-open.svg'
 import Image from "next/image";
 import RightArrow from '@/public/assets/icons/career/right-arrow.svg'
 import Link from "next/link";
+import down from '@/public/assets/icons/career/down-arrow.svg'
 
 
 const categories = [
@@ -65,9 +66,12 @@ export const CareerPage = () => {
               svg={category.svg}
             />
           ))}
+          <div className="down-floating">
+              <Link href={"#apply"}><Image src={down} alt="down"></Image></Link>
+          </div>
         </div>
       </div>
-        <div className="carrer-sidebar">
+        <div className="carrer-sidebar" id="apply">
           <div className="apply-msg" >
             <p className={ntr.className}>APPLY FOR INTERNSHIP & VARIOUS POST</p>
           </div>

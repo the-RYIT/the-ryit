@@ -90,7 +90,7 @@
     justify-content: center;
     align-items: center;
     p {
-      font-size: 2.5vw;
+      font-size: 2vw;
       letter-spacing: 0.2rem;
     }
     
@@ -112,21 +112,26 @@
     }
     
   }
-  .career-open-sidebar {
+  .down-floating{
     position: absolute;
-    height: 50px;
-    width: 50px;
-    right: 0;
-    top: 66vh;
+    height: 3.5rem;
+    width: 3.5rem;
+    // background-color: #000;
+    border: 1px solid #a3a3a3;
+    border-radius: 50%;
+    right: 7rem;
+    bottom: 4em;
     cursor: pointer;
-    // background-color: black;
-
-    p {
-      font-size: 4rem;
-    }
-
-    
+    animation: floating 1s ease-in-out 0.5s infinite alternate ;
   }
+  @keyframes floating {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }  
 
   // Now it's time for responsive
 
@@ -145,6 +150,9 @@
     }
     .career-subContainer {
       gap: 1rem;
+    }
+    .down-floating{
+      display: none;
     }
   }
 
@@ -180,6 +188,9 @@
         }
       }
       .right-arrow{
+        display: none;
+      }
+      .down-floating{
         display: none;
       }
     }
