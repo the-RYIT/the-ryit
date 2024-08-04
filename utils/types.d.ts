@@ -68,3 +68,38 @@ export namespace NEventItem {
     eventVenue: string;
   }
 }
+
+export namespace NCoursePage {
+  interface courseCardProps {
+    courseName: string;
+    shortDescription: string;
+    slug: {
+      current: string;
+      _type: string;
+    };
+    CourseDuration: string;
+    courseImage: {
+      asset: {
+        url: string;
+      };
+    };
+    CourseLevel: string;
+  }
+
+  interface courseFullDetails {
+    CourseLevel: string;
+    courseEligibility: string;
+    courseImage: {
+      asset: {
+        url: string;
+      };
+    };
+    courseOpportunities: string[];
+    extraFacilities: string[];
+    courseLessons: string[];
+    courseName: string;
+
+    fullDescription: string;
+    CourseDuration: string;
+  }
+}
