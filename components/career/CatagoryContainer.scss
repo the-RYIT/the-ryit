@@ -8,18 +8,23 @@
     transition: all ease 0.2s;
     &:hover{
         border: 1px solid #aeaeae;
-        box-shadow: inset -2px -2px;
     }
     &:nth-child(1){
         box-shadow: 1px 1px 1px 1px #77E4C8;
         .cc-image{
             background-color: #77E4C8;
         }
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #77E4C8;
+        }
     }
     &:nth-child(2){
         box-shadow: 1px 1px 1px 1px #83B4FF;
         .cc-image{
             background-color: #83B4FF;
+        }
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #83B4FF;
         }
     }
     &:nth-child(3){
@@ -31,6 +36,10 @@
                 width: 30px;
             }
         }
+
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #FF8C9E;
+        }
     }
     &:nth-child(4){
         box-shadow: 1px 1px 1px 1px #FFBE98;
@@ -41,6 +50,10 @@
                 width: 35px;
             }
         }
+
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #FFBE98;
+        }
     }
     &:nth-child(5){
         
@@ -49,12 +62,19 @@
             background-color: #9F70FD;
            
         }
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #9F70FD;
+        }
     }
     &:nth-child(6){
         
         box-shadow: 1px 1px 1px 1px #FFDA76;
         .cc-image{
             background-color: #FFDA76;
+        }
+
+        &:hover{
+            box-shadow: -1px -1px 1px 1px #FFDA76;
         }
     }
 }

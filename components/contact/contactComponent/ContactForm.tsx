@@ -72,7 +72,7 @@ export const ContactForm = () => {
       e.preventDefault();
       // Handle form submission
       await validationSchema.validate(formData, { abortEarly: false });
-
+      
       console.log(formData);
       // Reset form data
       setFormData({
@@ -83,6 +83,7 @@ export const ContactForm = () => {
         Address: "",
         message: "",
       });
+      setError({}); 
       const btn: HTMLButtonElement | null =
         document.querySelector(".submit-btn");
       if (btn) {
