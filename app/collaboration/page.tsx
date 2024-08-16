@@ -1,4 +1,4 @@
-import { bodoni_moda, charm, ntr } from "@/utils/fonts/fonts";
+import { charm, ntr } from "@/utils/fonts/fonts";
 import img from "@/public/assets/images/collaboration/music.jpg";
 import img1 from "@/public/assets/images/collaboration/class.jpg";
 import "./colab-style.scss";
@@ -27,7 +27,7 @@ const page = () => (
         At <b>The RYIT</b>, we believe that the fusion of academic excellence and industry expertise
         is key to delivering world-class AI skill training. Our collaborative approach ensures that
         our learners receive the most relevant, cutting-edge education, preparing them to meet the
-        demands of today's dynamic job market.
+        demands of today&apos;s dynamic job market.
       </p>
     </div>
 

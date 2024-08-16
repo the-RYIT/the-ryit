@@ -35,11 +35,19 @@ const MobileNav = () => {
           </li>
           <span className="horizontal-border"></span>
           <li onClick={() => setOpenOption(!isMobileNavOpen)}>
+            <Link href="/gallery">Gallery</Link>
+          </li>
+          <span className="horizontal-border"></span>
+          <li onClick={() => setOpenOption(!isMobileNavOpen)}>
             <Link href="/course">Courses</Link>
           </li>
           <span className="horizontal-border"></span>
           <li onClick={() => setOpenOption(!isMobileNavOpen)}>
             <Link href="/career">Career</Link>
+          </li>
+          <span className="horizontal-border"></span>
+          <li onClick={() => setOpenOption(!isMobileNavOpen)}>
+            <Link href="/collaboration">Collaboration</Link>
           </li>
           <span className="horizontal-border"></span>
           <li onClick={() => setOpenOption(!isMobileNavOpen)}>

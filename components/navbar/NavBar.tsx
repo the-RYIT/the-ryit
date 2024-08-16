@@ -15,11 +15,11 @@ const NavBar = () => {
       <nav className="hidden md:flex ">
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/blogs">Blogs</Link>
           </li>
           |
           <li>
-            <Link href="/blogs">Blogs</Link>
+            <Link href="/gallery">Gallery</Link>
           </li>
           |
           <li>

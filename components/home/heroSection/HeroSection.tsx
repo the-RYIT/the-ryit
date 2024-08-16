@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./hero-style.scss";
 import heroImage from "@/public/assets/images/home/herosection/heroImage.jpg";
-import { ntr, manrope, openSans } from "@/utils/fonts/fonts";
+import { ntr, manrope } from "@/utils/fonts/fonts";
 import LinkBtn from "@/components/LinkBtn/LinkBtn";
 
 const HeroSection = () => {

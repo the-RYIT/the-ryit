@@ -1,11 +1,11 @@
-import { bodoni_moda, manrope } from "@/utils/fonts/fonts";
+import { manrope, ntr } from "@/utils/fonts/fonts";
 import "./gallery-style.scss";
 const ExtraDetails = () => {
   return (
     <section className="gallery-extra-section" style={manrope.style}>
       {/* Write about a gallery section for computer center
        */}
-      <h1 className={bodoni_moda.className}>Visual Tour of RYIT&#39;s Areas</h1>
+      <h1 className={ntr.className}>Visual Tour of RYIT&#39;s Areas</h1>
 
       <p>
         Welcome to the <strong>The RYIT - Rastriya Youth Institution of Technology</strong> Computer
@@ -19,7 +19,7 @@ const ExtraDetails = () => {
         In our <strong>Computer Training</strong> sessions, students and professionals alike can
         acquire fundamental computing skills, from mastering essential software to understanding
         hardware components. Our hands-on approach prepares individuals for practical applications
-        in today's tech-driven world.
+        in today&apos;s tech-driven world.
       </p>
       <p>
         For those interested in the future of technology, our <strong>AI and Robotics</strong>{" "}
