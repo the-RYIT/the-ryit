@@ -1,0 +1,177 @@
+.container-section {
+
+    .aqua-svg,
+    .blue-svg {
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+    }
+
+    .aqua-svg {
+        right: -30%;
+        top: -25%;
+        filter: blur(9px);
+    }
+
+    .blue-svg {
+        bottom: -40%;
+        left: -25%;
+        filter: blur(9px);
+    }
+
+    .container {
+        padding: 10px;
+        border: 1px solid rgba(57, 101, 207, 0.23);
+        border-radius: 10px;
+        aspect-ratio: 3/3;
+        box-shadow: inset 0 0 4px rgba(15, 96, 199, 0.32);
+        position: relative;
+
+        .inner-container {
+            background: rgba(192, 192, 192, 0.169);
+            box-shadow: 0px 0px 17px 0px #00459f4a;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            border: 1px solid #5e5d5d3f;
+            border-radius: 5px;
+            padding: 1rem .6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .container-img {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 40%;
+                aspect-ratio: 3/3.5;
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .container-header {
+                width: 55%;
+
+
+                h1 {
+                    font-size: 3.6rem;
+                    margin-bottom: .6rem;
+                    line-height: 1.2;
+                }
+
+                h3 {
+                    font-size: 1.0885rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .points-container {
+
+                margin-left: .3rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                padding-top: 1rem;
+
+                .points-text {
+                    padding: 1rem .5rem;
+
+                    font-size: 1.2rem;
+                    backdrop-filter: blur(2px);
+                    background: #0068ed14;
+                    border-radius: 15px;
+                    border: 1px solid #464f6d47;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (width <=1024px) and (orientation: portrait) {
+    main.mainSection {
+
+        overflow-x: hidden;
+    }
+
+    .container-section {
+
+        .aqua-svg,
+        .blue-svg {
+
+            width: 75%;
+        }
+
+
+
+        .container {
+            width: 100%;
+            aspect-ratio: 3/5;
+
+            .inner-container {
+
+
+
+
+                .container-header {
+
+
+                    h1 {
+                        font-size: 1.7rem;
+                    }
+
+                    h3 {
+                        font-size: 10px;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .points-container {
+
+
+
+                    padding-top: 1rem;
+
+                    .points-text {
+                        padding: 8px;
+                        font-size: .9rem;
+                        line-height: 1.24;
+                        border-radius: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (width <=500px) and (orientation: portrait) {
+
+    .container-section {
+        flex-direction: column;
+
+        .blue-svg {
+            bottom: -6%;
+            left: -18%;
+
+        }
+
+        .aqua-svg {
+            right: -25%;
+            top: 6%;
+        }
+
+        .container {
+            aspect-ratio: 3/4;
+        }
+    }
+}

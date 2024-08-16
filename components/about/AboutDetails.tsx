@@ -17,7 +17,7 @@ const AboutDetails = () => {
           src={aboutImage}
           alt="about"
           style={{
-            width: "30%",
+            width: "100%",
           }}
         />
 
