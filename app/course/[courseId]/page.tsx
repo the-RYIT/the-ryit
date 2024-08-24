@@ -62,9 +62,11 @@ const CourseDetails = async ({ params }: { params: { courseId: string } }) => {
             <h2>Opportunities</h2>
             <div className="course-opportunities">
               <ul className="ul">
-                {courseDetails.courseOpportunities.map((opportunity: string, index: number) => (
-                  <li key={index}>{opportunity}</li>
-                ))}
+                {courseDetails.courseOpportunities == null
+                  ? "No Opportunities Given"
+                  : courseDetails.courseOpportunities.map((opportunity: string, index: number) => (
+                      <li key={index}>{opportunity}</li>
+                    ))}
               </ul>
             </div>
 
@@ -75,9 +77,11 @@ const CourseDetails = async ({ params }: { params: { courseId: string } }) => {
             <h2>Extra Facilities</h2>
             <div className="course-extra-facilities">
               <ul className="ul">
-                {courseDetails.extraFacilities.map((facility: string, index: number) => (
-                  <li key={index}>{facility}</li>
-                ))}
+                {courseDetails.extraFacilities == null
+                  ? "No Extra Facility Given"
+                  : courseDetails.extraFacilities.map((facility: string, index: number) => (
+                      <li key={index}>{facility}</li>
+                    ))}
               </ul>
             </div>
           </div>
@@ -85,9 +89,11 @@ const CourseDetails = async ({ params }: { params: { courseId: string } }) => {
             <h2>Course lessons</h2>
             <div className="course-lessons">
               <ul className="ul">
-                {courseDetails.courseLessons.map((lesson: string, index: number) => (
-                  <li key={index}>{lesson}</li>
-                ))}
+                {courseDetails.courseLessons == null
+                  ? "No Teaching Lessons"
+                  : courseDetails.courseLessons.map((lesson: string, index: number) => (
+                      <li key={index}>{lesson}</li>
+                    ))}
               </ul>
             </div>
 
