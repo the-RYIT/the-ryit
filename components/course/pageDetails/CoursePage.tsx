@@ -13,7 +13,7 @@ export const CoursePage = async () => {
     useCdn: false,
   });
 
-  const query = `*[_type == "course"]{courseName, slug, shortDescription,CourseLevel,CourseDuration,courseImage{asset->{url}}}`;
+  const query = `*[_type == "course"]{courseName,slug,shortDescription,CourseLevel,CourseDuration,courseImage{asset->{url}}}`;
   const allCourses: NCoursePage.courseCardProps[] = await client.fetch(query);
 
   return (

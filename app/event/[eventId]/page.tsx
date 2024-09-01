@@ -13,7 +13,7 @@ const page = async ({ params }: { params: { eventId: string } }) => {
     useCdn: true,
   });
 
-  const query = `*[_type == "event" && slug.current == '${params.eventId}'][0]{title,eventDescription, eventDate,eventOrganizerContact,eventVenue, eventShootImages,eventOrganizer,eventImage{asset->{url}}}`;
+  const query = `*[_type == "event" && slug.current == '${params.eventId}'][0]{title,eventDescription,eventDate,eventOrganizerContact,eventVenue, eventShootImages,eventOrganizer,eventImage{asset->{url}}}`;
   const eventDetails: NEventItem.fullEventDetails = await client.fetch(query);
 
   const mainDetails: NEventItem.mainDetails = {

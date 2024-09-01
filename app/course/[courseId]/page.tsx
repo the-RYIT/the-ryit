@@ -22,7 +22,7 @@ const CourseDetails = async ({ params }: { params: { courseId: string } }) => {
     useCdn: true,
   });
 
-  const query = `*[_type == "course" && slug.current == '${params.courseId}'][0]{courseName, fullDescription,CourseLevel,CourseDuration,courseEligibility,courseOpportunities,extraFacilities,courseLessons,courseImage{asset->{url}}}`;
+  const query = `*[_type == "course" && slug.current == '${params.courseId}'][0]{courseName,fullDescription,CourseLevel,CourseDuration,courseEligibility,courseOpportunities,extraFacilities,courseLessons,courseImage{asset->{url}}}`;
   const courseDetails: NCoursePage.courseFullDetails = await client.fetch(query);
 
   return (

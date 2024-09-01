@@ -24,8 +24,12 @@ const page = async ({ params }: { params: { blogSlug: string } }) => {
     useCdn: true,
   });
 
-  const query = `*[_type == "blog" && slug.current == '${params.blogSlug}'][0]{title, slug, author,blogContent, publishedAt, mainImage{asset->{url}}}`;
+  const query = `*[_type == "blog" && slug.current == '${params.blogSlug}'][0]{title,slug,author,blogContent, publishedAt,mainImage{asset->{url}}}`;
   const blog: NBlog.InfFullBlog = await client.fetch(query);
+
+  // add fontsize in the style object
+  const styleSheet = { ...manrope.style, fontSize: "16px" };
+
   console.log(blog.blogContent);
   return (
     <main className="mainSection flex flex-col gap-4 items-center">
@@ -51,7 +55,7 @@ const page = async ({ params }: { params: { blogSlug: string } }) => {
           {blog.publishedAt} <span> -- </span> {blog.author}
         </div>
 
-        <article className="Solo-blog-content max-sm:px-4 sm:mt-8" style={manrope.style}>
+        <article className="Solo-blog-content max-sm:px-4 sm:mt-8" style={styleSheet}>
           <PortableText content={blog.blogContent} projectId={projectId} dataset={dataset} />
         </article>
       </div>

@@ -12,7 +12,7 @@ const BlogContainer = async () => {
     apiVersion,
     useCdn: true,
   });
-  const query = `*[_type == "blog"]{title, slug, author, publishedAt, mainImage{asset->{url}}}`;
+  const query = `*[_type == "blog"]{title,slug,author,publishedAt,mainImage{asset->{url}}}`;
   const allBlogs: NBlog.InfBlog[] = await client.fetch(query);
 
   return (
