@@ -70,6 +70,27 @@
     }
 }
 
+.course-heading-name{
+    height:38px;
+    overflow-y: scroll;
+    padding-bottom: 4px;
+    scrollbar-width: none; 
+    &::-webkit-scrollbar{
+        display: none; 
+    }
+}
+
+.course-container-about{
+    height:59px;
+    overflow-y: scroll;
+    padding-bottom: 4px;
+    scrollbar-width: none; 
+    &::-webkit-scrollbar{
+        display: none; 
+    }
+}
+
+
 #course-features {
     margin-top: 0.8rem;
     height: 2rem;

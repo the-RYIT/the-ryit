@@ -107,7 +107,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="formDesign">
+    <form onSubmit={handleSubmit} className="formDesign" >
       <div className="form-name">
         <Input
           type="text"
