@@ -19,22 +19,25 @@ const iframeSources: { [key in Tab]: string } = {
 };
 
 const contactDetails: {
-  [key in Tab]: { address: string; email: string; phone: string };
+  [key in Tab]: { address: string; email: string; phone: string; phone2: string };
 } = {
   chaipat: {
     address: "Chaipat Beldanga     Chaipat,Daspur,Paschim Medinipur 721178",
     email: "theryit2024@gmail.com",
     phone: "+919679103253",
+    phone2: "+919874159713",
   },
   goura: {
     address: "Uttar Gobindanagar   Goura,Daspur,Paschim Medinipur 721146",
     email: "theryit2024@gmail.com",
     phone: "+919679103253",
+    phone2: "+919874159713",
   },
   bhatora: {
     address: "Bhatora Shibtola Bazar    Bhatora,Joypur,Howrah, 711303",
     email: "theryit2024@gmail.com",
     phone: "+919679103253",
+    phone2: "+919874159713",
   },
 };
 
@@ -55,21 +58,11 @@ export const DetailSection = () => {
 
   return (
     <div className="wrapper">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="contact-svg"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="contact-svg">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop
-              offset="0%"
-              style={{ stopColor: "#0099ff", stopOpacity: 1 }}
-            />
-            <stop
-              offset="100%"
-              style={{ stopColor: "#ffffff", stopOpacity: 1 }}
-            />
+            <stop offset="0%" style={{ stopColor: "#0099ff", stopOpacity: 1 }} />
+            <stop offset="100%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
           </linearGradient>
         </defs>
         <path
@@ -133,13 +126,11 @@ export const DetailSection = () => {
           <p>{contactDetails[selectedTab].email}</p>
           <h2>Phone</h2>
           <p>{contactDetails[selectedTab].phone}</p>
+          <p>{contactDetails[selectedTab].phone2}</p>
         </div>
 
         <div className="slider">
-          <div
-            className="slides"
-            style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-          >
+          <div className="slides" style={{ transform: `translateX(${-currentSlide * 100}%)` }}>
             {slides.map((slide, index) => (
               <div className="slide" key={index}>
                 <Image

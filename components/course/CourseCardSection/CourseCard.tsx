@@ -6,19 +6,8 @@ import { NCoursePage } from "@/utils/types";
 import { clientCredential } from "@/utils/assets";
 import imageUrlBuilder from "@sanity/image-url";
 
-export const CourseCard = ({
-  course,
-}: {
-  course: NCoursePage.courseCardProps;
-}) => {
-  const {
-    CourseDuration,
-    CourseLevel,
-    courseImage,
-    courseName,
-    shortDescription,
-    slug,
-  } = course;
+export const CourseCard = ({ course }: { course: NCoursePage.courseCardProps }) => {
+  const { CourseDuration, CourseLevel, courseImage, courseName, shortDescription, slug } = course;
 
   const { projectId, dataset } = clientCredential;
   if (!projectId || !dataset) {
@@ -54,7 +43,11 @@ export const CourseCard = ({
 
           <div id="button-div">
             <button id="view-course-btn">
-              <Link href={"course/" + slug.current}>View Details</Link>
+              {slug ? (
+                <Link href={"course/" + slug.current}>View Details</Link>
+              ) : (
+                <Link href={"course/"}>View Details</Link>
+              )}
             </button>
           </div>
           <div id="course-features">

@@ -4,6 +4,7 @@ import { ntr, manrope } from "@/utils/fonts/fonts";
 import { clientCredential } from "@/utils/assets";
 import { createClient } from "next-sanity";
 import { NCoursePage } from "@/utils/types";
+
 export const CoursePage = async () => {
   const { apiVersion, projectId, dataset } = clientCredential;
   const client = createClient({
@@ -15,7 +16,9 @@ export const CoursePage = async () => {
 
   const query = `*[_type == "course"]{courseName,slug,shortDescription,CourseLevel,CourseDuration,courseImage{asset->{url}}}`;
   const allCourses: NCoursePage.courseCardProps[] = await client.fetch(query);
-
+  console.log("====================================");
+  console.log(allCourses);
+  console.log("====================================");
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="course-svg">
@@ -38,8 +41,8 @@ export const CoursePage = async () => {
       </p>
       <div id="card-section">
         {allCourses.length > 0 ? (
-          allCourses.map((course: NCoursePage.courseCardProps) => (
-            <CourseCard key={course.slug.current} course={course} />
+          allCourses.map((course: NCoursePage.courseCardProps, index: number) => (
+            <CourseCard key={course?.slug?.current ?? index.toString()} course={course} />
           ))
         ) : (
           <h1
