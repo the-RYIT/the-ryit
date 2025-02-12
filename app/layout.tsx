@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 import NavBar from "@/components/navbar/NavBar";
 import "./globals.scss";
 import FloatingPromo from "@/components/floatingPromo/FloatingPromo";
+import NotFound from "@/components/404";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FloatingPromo />
-        <NavBar />
-
-        {children}
+        {/* <FloatingPromo />
+        <NavBar /> */}
+        <NotFound/>
+        {/* {children} */}
       </body>
     </html>
   );
