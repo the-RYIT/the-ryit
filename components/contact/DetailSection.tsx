@@ -5,7 +5,10 @@ import "@/components/contact/DetailSection.scss";
 import { useState, useEffect } from "react";
 import { ContactForm } from "./contactComponent/ContactForm";
 import Image from "next/image";
-import dummyImage from "@/public/assets/images/course/dummy2jpg.jpg";
+import  c1 from "@/public/assets/images/contact/c1.avif";
+import c2 from "@/public/assets/images/contact/c2.avif";
+import c3 from "@/public/assets/images/contact/c3.avif";
+import c4 from "@/public/assets/images/contact/c4.avif";
 import { useRef } from "react";
 
 type Tab =
@@ -91,7 +94,7 @@ export const DetailSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const TabRef = useRef<HTMLDivElement>(null);
 
-  const slides = [dummyImage, dummyImage, dummyImage, dummyImage];
+  const slides = [c1, c2, c3, c4];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
